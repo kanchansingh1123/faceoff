@@ -1,0 +1,44 @@
+page-doctor-details {
+.doctors-list .font-color{
+    color:#63DDED
+}
+.doctors-list .hartbar-cls{
+    z-index: 222;
+    position: absolute;
+    margin-top: -22px;
+    margin-left: 12px;
+    width: 100% !important;
+    max-width: 18%;
+    max-height: 100%;
+}
+.doctors-list .hartbar-rating{
+    z-index: 222;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 42px;
+    font-size: 10px;
+    color: #fff;
+}
+.doctors-list .phone-button{
+    background-color:#63DDED;
+    margin-top: 1px;
+}
+.doctors-list a{
+    text-decoration:none;
+}
+.doctors-list hr{
+    border-top: 1px solid #63DDED;
+}
+.doctors-list .doctor-img{
+    min-width: 8.5rem;
+    min-height: 10rem;
+}
+.doctors-list .doctor-avatar{
+    min-width: 8rem;
+    min-height: 8rem;
+    margin-top: 0 !important;
+}
+.doctors-list{
+    background:#eaeaea;
+}
+}

@@ -3,21 +3,22 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { PasswordPage } from '../pages/password/password';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { SearchDoctors } from '../pages/searchdoctors/searchdoctors';
+import { DoctorDetailsPage } from '../pages/doctordetails/doctordetails';
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
-    HomePage,
     LoginPage,
     RegisterPage,
     PasswordPage,
+    SearchDoctors,
+    DoctorDetailsPage,
     TabsPage
   ],
   imports: [
@@ -28,10 +29,11 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     AboutPage,
     ContactPage,
-    HomePage,
     LoginPage,
     RegisterPage,
     PasswordPage,
+    SearchDoctors,
+    DoctorDetailsPage,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

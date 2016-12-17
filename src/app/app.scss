@@ -14,3 +14,451 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: "proHelath";
+  src:  url("../assets/fonts/Pro-Health.ttf") format("truetype");
+font-weight: normal;}
+
+.profile{
+
+}
+
+.lock{
+
+}
+
+.showPassword{
+
+}
+
+.hidePassword{
+
+}
+
+.back-arrow{
+
+}
+
+.phone{
+
+}
+
+.mail{
+
+}
+
+.search{
+
+}
+
+.bell{
+
+}
+
+.tooth{
+
+}
+
+.head{
+
+}
+
+.cardio{
+
+}
+
+.neck{
+
+}
+
+.brain{
+
+}
+
+.heart{
+
+}
+
+.person{
+
+}
+
+.file{
+
+}
+
+.calendar{
+
+}
+
+.heartbeat{
+
+}
+
+.rupee{
+
+}
+
+.time{
+
+}
+
+.speedmeter{
+
+}
+
+.feature{
+
+}
+
+.plant{
+
+}
+
+.throat{
+
+}
+
+.molecule{
+
+}
+
+.meter{
+
+}
+
+.inject{
+
+}
+
+.plus{
+
+}
+
+.note{
+
+}
+
+.upload{
+
+}
+
+.photo{
+
+}
+
+.tablet{
+
+}
+
+.correct{
+
+}
+
+.dumbell{
+
+}
+
+.apple{
+
+}
+
+.profile:before{
+	 content: "\0041";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.lock:before{
+	 content: "\0042";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.showPassword:before{
+	 content: "\0043";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.hidePassword:before{
+	content: "\0044";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.back-arrow:before{
+	content: "\0045";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.phone:before{
+	content: "\0046";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.mail:before{
+	content: "\0047";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.search:before{
+	content: "\0048";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.bell:before{
+	content: "\0049";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.tooth:before{
+	content: "\004A";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.head:before{
+	content: "\004B";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.cardio:before{
+	content: "\004C";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.neck:before{
+	content: "\004D";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.brain:before{
+	content: "\004E";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.heart:before{
+	content: "\004F";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.person:before{
+	content: "\0050";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.file:before{
+	content: "\0051";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.calendar:before{
+	content: "\0052";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.heartbeat:before{
+	content: "\0053";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.rupee:before{
+	content: "\0054";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.time:before{
+	content: "\0055";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.speedmeter:before{
+	content: "\0056";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.feature:before{
+	content: "\0057";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.plant:before{
+	content: "\0058";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.throat:before{
+	content: "\0059";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.molecule:before{
+	content: "\005A";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.meter:before{
+	content: "\005B";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.inject:before{
+	content: "\0061";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.plus:before{
+	content: "\0062";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.note:before{
+	content: "\0063";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.upload:before{
+	content: "\0064";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.photo:before{
+	content: "\0065";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.tablet:before{
+	content: "\0066";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.correct:before{
+	content: "\0067";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.dumbell:before{
+	content: "\0068";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.apple:before{
+	content: "\0069";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+/* global css */
+.content-background{
+   background: #63DDED !important;
+}
+
+.lin-lout{
+    width: 70%;
+    color: #63DDED;
+    height: 60px;
+    border-radius: 32px;
+    font-weight: bold;
+    background: #fff !important;
+}
+
+.login-submit{
+  text-align: center;
+  margin-top:5%;
+}
+
+.icon-align{
+  color:#ebebeb;
+  font-size:30px;
+}

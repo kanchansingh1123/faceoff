@@ -1,0 +1,60 @@
+page-register {
+
+  .register-list{
+    margin:30% 10% 0% 10%;
+    color: #fff;
+  }
+
+  .item{
+    border-top: none !important;
+    border-bottom:1px solid #fff !important;
+    color:#fff;
+  }
+
+  input[type="text"]::-webkit-input-placeholder {
+    color: #ebebeb;
+  }
+
+  input[type="email"]::-webkit-input-placeholder {
+    color: #ebebeb;
+  }
+
+  input[type="password"]::-webkit-input-placeholder {
+    color: #ebebeb;
+  }
+
+  .terms{
+    padding-left: 10%;
+    font-size: 9px;
+    margin-top: 8%;
+  }
+
+  .terms-text{
+    color:#fff;
+  }
+
+   .condition-text{
+     color:#6B6B6B;
+   }
+  .register-button-div{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .or{
+    color:#ebebeb;
+  }
+
+  .login{
+    color:#fff;
+    font-size: 20px;
+    text-decoration:none;
+  }
+
+  .password-show{
+      float: right;
+      position: relative;
+      margin-top: -44px;
+      margin-right: 15px;
+  }
+}

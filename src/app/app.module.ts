@@ -4,9 +4,6 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { LoginPage } from '../pages/login/login';
-import { RegisterPage } from '../pages/register/register';
-import { PasswordPage } from '../pages/password/password';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
@@ -15,9 +12,6 @@ import { TabsPage } from '../pages/tabs/tabs';
     AboutPage,
     ContactPage,
     HomePage,
-    LoginPage,
-    RegisterPage,
-    PasswordPage,
     TabsPage
   ],
   imports: [
@@ -29,9 +23,6 @@ import { TabsPage } from '../pages/tabs/tabs';
     AboutPage,
     ContactPage,
     HomePage,
-    LoginPage,
-    RegisterPage,
-    PasswordPage,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

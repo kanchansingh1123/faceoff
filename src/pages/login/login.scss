@@ -1,0 +1,59 @@
+page-login {
+
+ .input-align{
+    margin-left: 4px !important;
+    padding-right: 7px !important;
+  }
+
+ .login-list{
+   margin:40% 10% 0% 10%;
+   color: #fff;
+ }
+
+ .item{
+   border-top: none !important;
+   border-bottom:1px solid #fff;
+   color:#fff;
+ }
+
+ .password-show{
+     float: right;
+     position: relative;
+     margin-top: -44px;
+     margin-right: 15px;
+ }
+
+ input[type="text"]::-webkit-input-placeholder {
+   color: #ebebeb;
+ }
+
+ input[type="password"]::-webkit-input-placeholder {
+   color: #ebebeb;
+ }
+
+ .forgot-password{
+   color:#ebebeb;
+   margin-top: 10px;
+   font-size: 16px;
+ }
+
+ .or{
+   text-align: center;
+   color:#ebebeb;
+   margin-top:20px;
+ }
+
+ .register{
+   text-align: center;
+   color:#fff;
+   margin-top:20px;
+   font-size: 20px;
+ }
+
+ .nav-ctrl{
+   color: #fff;
+    text-decoration: none;
+ }
+
+
+}

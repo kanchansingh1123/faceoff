@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SearchDoctors } from '../searchdoctors/searchdoctors';
 import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+import { NotificationPage } from '../notification/notification';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -11,7 +11,7 @@ export class TabsPage {
   // should be each tab's root Page
   tab1Root: any = SearchDoctors;
   tab2Root: any = AboutPage;
-  tab3Root: any = ContactPage;
+  tab3Root: any = NotificationPage;
 
   constructor() {
 

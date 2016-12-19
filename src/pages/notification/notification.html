@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Notification
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="notification">
+  <ion-card class="notification-card">
+      <ion-card-header>
+        Pill Reminder
+      </ion-card-header>
+      <ion-card-content class="set-card-padding">
+        <p class="reminder-data">It's almost time for before breakfast meds. Take it now, which will help you have your breakfast on time.</p>
+        <hr>
+        <ion-grid>
+          <ion-row>
+            <p><ion-icon class="timetablet font-color setfont"></ion-icon></p>
+            <ion-col width-50> <h2 class="font-color">Prozac</h2><p>15 Sep to 21 Sep</p></ion-col>
+            <ion-col width-33><button ion-button color="dark" round class="break-fast">Breakfast <br> 9:00 AM</button></ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+  </ion-card>
+
+  
+  <ion-card class="doctor-card" *ngFor="let doctor of doctors">
+  <ion-card-header>
+        Appoinment Reminder
+  </ion-card-header>
+    <ion-item class="doctor-item">
+      <ion-avatar item-left class="doctor-avatar">
+      <img src="{{doctor.image}}" class="doctor-img">
+      <img class="hartbar-cls" src="../assets/images/hartbar.png">
+      <span class="hartbar-rating">{{doctor.Rating}}</span>
+      </ion-avatar>
+      <h2 class="font-color">{{doctor.Name}}</h2>
+      <h5>{{doctor.PostGraduation}} - {{doctor.Specialization}} - Gastroenterology</h5> 
+      <h5>{{doctor.Graduation}}</h5> 
+      <p>Gastroenterologist</p>
+      <p>{{doctor.Experience}} years experience</p>
+    </ion-item>
+    <hr>
+        <ion-row>
+              <ion-col width-50>
+                <p><ion-icon class="rupee font-color"></ion-icon> {{doctor.Fees}}</p>
+                <ion-row>
+                    <ion-col width-10 class="setpadding"><ion-icon class="time font-color time-icon"></ion-icon></ion-col>
+                    <ion-col>{{doctor.StartTiming}}</ion-col>  
+                </ion-row>
+                <ion-row>
+                    <ion-col width-10 class="setpadding"><ion-icon class="location font-color"></ion-icon></ion-col>
+                    <ion-col width-75>kphb,Telangana</ion-col>  
+                </ion-row>
+              </ion-col>
+              <ion-col width-50>
+                  <ion-row class="button-phone-cancel">
+                          <a href="tel:8143473707">
+                          <button ion-fab mini class="phone-button"><ion-icon class="phone"></ion-icon></button></a>
+                          <button ion-button button color="danger" round style="font-size: 13px;">Cancel</button>
+                  </ion-row>
+              </ion-col>
+        </ion-row>
+  </ion-card>
+
+  <ion-card class="notification-card">
+      <ion-card-header>
+        Feedback
+      </ion-card-header>
+      <ion-card-content class="set-card-padding">
+        <h6 class="centercls">Please rate your Experience with Dr.Show</h6>
+        <hr>
+        <ion-grid class="set-card-padding">
+          <ion-row class="set-card-padding">
+            <ion-col width-33 class="set-card-padding button-width"> <button ion-button class="font-color button-font" clear>Mon 12 Dec</button> </ion-col>
+            <ion-col width-33 class="set-card-padding button-width"> <button ion-button class="time-button button-font" >11:00 AM - 12:00 PM</button> </ion-col>
+            <ion-col width-33 class="set-card-padding button-width"> <button ion-button color="danger" class="button-font rate-button" round>Rate Now</button> </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+  </ion-card>
+
+</ion-content>

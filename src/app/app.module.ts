@@ -9,6 +9,8 @@ import { PasswordPage } from '../pages/password/password';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SearchDoctors } from '../pages/searchdoctors/searchdoctors';
 import { DoctorDetailsPage } from '../pages/doctordetails/doctordetails';
+import { NotificationPage } from '../pages/notification/notification';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -19,6 +21,7 @@ import { DoctorDetailsPage } from '../pages/doctordetails/doctordetails';
     PasswordPage,
     SearchDoctors,
     DoctorDetailsPage,
+    NotificationPage,
     TabsPage
   ],
   imports: [
@@ -34,6 +37,7 @@ import { DoctorDetailsPage } from '../pages/doctordetails/doctordetails';
     PasswordPage,
     SearchDoctors,
     DoctorDetailsPage,
+    NotificationPage,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

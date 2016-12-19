@@ -1,15 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Gastroenterologist
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="doctors-list">
-<h5 style="margin-left: 1rem;">Gastroenterologist</h5>
-  <ion-card style="box-shadow: none;" *ngFor="let doctor of doctors">
-  <ion-item style="padding-left: 0;">
+<h5 class="sub-heading">Gastroenterologist</h5>
+  <ion-card class="doctor-card" *ngFor="let doctor of doctors">
+  <ion-item class="doctor-item">
     <ion-avatar item-left class="doctor-avatar">
     <img src="{{doctor.image}}" class="doctor-img">
     <img class="hartbar-cls" src="../assets/images/hartbar.png">
@@ -25,10 +24,13 @@
         <ion-row>
               <ion-col width-50>
                 <p><ion-icon class="rupee font-color"></ion-icon> {{doctor.Fees}}</p>
-                <div><ion-icon class="time font-color"></ion-icon>{{doctor.StartTiming}} {{doctor.EndTiming}}</div>
+                <ion-row>
+                    <ion-col width-10 class="setpadding"><ion-icon class="time font-color time-icon"></ion-icon></ion-col>
+                    <ion-col>{{doctor.StartTiming}} {{doctor.EndTiming}}</ion-col>  
+                </ion-row>
               </ion-col>
               <ion-col width-50>
-                  <ion-row>
+                  <ion-row class="button-phone-booknow">
                           <a href="tel:8143473707">
                           <button ion-fab mini class="phone-button"><ion-icon class="phone"></ion-icon></button></a>
                           <button ion-button color="dark" round style="font-size: 13px;">Book Now</button>

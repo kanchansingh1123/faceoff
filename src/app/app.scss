@@ -438,7 +438,27 @@ font-weight: normal;}
     font-weight: normal;
     text-decoration: inherit;
 }
-
+.timetablet:before{
+    content: "\006C";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.delete:before{
+    content: "\006D";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.location:before{
+    content: "\006E";
+    font-family: proHelath;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
 /* global css */
 .content-background{
    background: #63DDED !important;

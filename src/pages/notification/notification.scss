@@ -1,0 +1,101 @@
+page-notification {
+	.notification {
+        background:#eaeaea;
+    }
+	.notification .font-color{
+	    color:#63DDED
+	}
+	.notification .break-fast {
+		font-size: 13px;
+		padding: 25px 15px 25px 15px;
+	}
+	.notification hr{
+        border-top: 1px solid #63DDED;
+    }
+    .notification .notification-card {
+        box-shadow: none;
+    }
+    .notification .hartbar-cls{
+        z-index: 222;
+        position: absolute;
+        margin-top: -22px;
+        margin-left: 12px;
+        width: 100% !important;
+        max-width: 18%;
+        max-height: 100%;
+    }
+    .notification .hartbar-rating{
+        z-index: 222;
+        position: absolute;
+        margin-top: -13px;
+        margin-left: 42px;
+        font-size: 10px;
+        color: #fff;
+    }
+    .notification .phone-button{
+        background-color:#63DDED;
+        margin-top: 1px;
+    }
+    .notification a{
+        text-decoration:none;
+    }
+    .notification hr{
+        border-top: 1px solid #63DDED;
+    }
+    .notification .doctor-img{
+        min-width: 8.5rem;
+        min-height: 10rem;
+    }
+    .notification .doctor-avatar{
+        min-width: 8rem;
+        min-height: 8rem;
+        margin-top: 0 !important;
+    }
+    .notification .sub-heading{
+        margin-left: 1rem;
+    }
+    .notification .doctor-card{
+        box-shadow: none;
+    }
+    .notification .doctor-item{
+        padding-left: 0;
+    }
+    .notification .setfont{
+        font-size:3em;
+    }
+    .notification .setpadding{
+    	padding-left:0;
+    }
+    .notification .time-icon{
+    	margin-top: 5px;
+    }
+    .notification .set-card-padding{
+    	padding:0;
+    	padding-bottom: 5px;
+    }
+    .notification .button-width{
+       max-width:28%;
+    }
+    .notification .button-font{
+	   font-size:11px;
+	   padding-top: 20px;
+       padding-bottom: 20px;
+    }
+    .notification .rate-button{
+    	margin-left: 37px;
+    }
+    .notification .time-button{
+    	background-color:#63DDED;
+    }
+    .notification .centercls{
+        text-align: center;
+    	padding-bottom: 10px;
+    }
+    .notification .reminder-data{
+    	padding-left: 25px;
+    	padding-right: 5px;
+    }
+    .notification .button-phone-cancel{
+    	margin-top: 14%;
+    }
+}

@@ -20,7 +20,7 @@ public doctors:any;
 	      StartTiming:"MON-TUE 11:00AM-1:00PM",
 	      EndTiming:"THU-SAT 7:00PM-9:00PM",
 	      Rating:"90%",
-	      image:"../assets/images/doctor1.png"
+	      image:"assets/images/doctor1.png"
 	  },
 	  {
 	      Name:"Dr.Shaw123",
@@ -31,8 +31,8 @@ public doctors:any;
 	      Fees:"500",
 	      StartTiming:"MON-TUE 11:00AM-1:00PM",
 	      EndTiming:"THU-SAT 7:00PM-9:00PM",
-	      Rating:"90%",
-	      image:"../assets/images/doctor1.png"
+	      Rating:"85%",
+	      image:"assets/images/doctor2.png"
 	  }
   ];
   }

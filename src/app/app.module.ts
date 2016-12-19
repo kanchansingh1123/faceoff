@@ -13,6 +13,9 @@ import { NotificationPage } from '../pages/notification/notification';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { ModalPage } from '../pages/schedule/modal-page/modal-page';
 //import { RatingModalPage } from '../pages/about/modal-page/modal-page';
+import { RecordsPage } from '../pages/records/records';
+import { ReportDetailPage } from '../pages/reportdetails/reportdetails';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { ModalPage } from '../pages/schedule/modal-page/modal-page';
     SchedulePage,
     ModalPage,
     //RatingModalPage,
-    TabsPage
+    TabsPage,
+    RecordsPage,
+    ReportDetailPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -47,7 +52,9 @@ import { ModalPage } from '../pages/schedule/modal-page/modal-page';
     SchedulePage,
     ModalPage,
     //RatingModalPage,
-    TabsPage
+    TabsPage,
+    RecordsPage,
+    ReportDetailPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

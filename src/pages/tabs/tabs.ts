@@ -3,6 +3,7 @@ import { SearchDoctors } from '../searchdoctors/searchdoctors';
 import { AboutPage } from '../about/about';
 import { NotificationPage } from '../notification/notification';
 import { SchedulePage } from '../schedule/schedule';
+import { RecordsPage } from '../records/records';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -13,8 +14,9 @@ export class TabsPage {
   tab1Root: any = SearchDoctors;
   tab2Root: any = AboutPage;
   tab3Root: any = NotificationPage;
-  tab4Root: any = SchedulePage;
+  tab5Root: any = SchedulePage;
 
+  tab4Root: any = RecordsPage;
   constructor() {
 
   }

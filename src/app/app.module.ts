@@ -10,6 +10,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { SearchDoctors } from '../pages/searchdoctors/searchdoctors';
 import { DoctorDetailsPage } from '../pages/doctordetails/doctordetails';
 import { NotificationPage } from '../pages/notification/notification';
+import { SchedulePage } from '../pages/schedule/schedule';
+import { ModalPage } from '../pages/schedule/modal-page/modal-page';
+//import { RatingModalPage } from '../pages/about/modal-page/modal-page';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { NotificationPage } from '../pages/notification/notification';
     SearchDoctors,
     DoctorDetailsPage,
     NotificationPage,
+    SchedulePage,
+    ModalPage,
+    //RatingModalPage,
     TabsPage
   ],
   imports: [
@@ -38,6 +44,9 @@ import { NotificationPage } from '../pages/notification/notification';
     SearchDoctors,
     DoctorDetailsPage,
     NotificationPage,
+    SchedulePage,
+    ModalPage,
+    //RatingModalPage,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

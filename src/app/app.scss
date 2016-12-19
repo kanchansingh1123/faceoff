@@ -482,3 +482,70 @@ font-weight: normal;}
   color:#ebebeb;
   font-size:30px;
 }
+/* Schedule css*/
+
+
+.medicine:before {
+ content: "\0066";
+ font-family:proHelath;
+ font-size: 50px;
+ color: white;
+}
+.scheduleTime{
+
+}
+.scheduleTime:before{
+  content:'\0055';
+  font-family:proHelath;
+  font-size: 50px;
+  color: #63DDED;
+}
+.rating{
+
+}
+.rating:before{
+  content:'\0053';
+  font-family:proHelath;
+  color:#F84E41;
+  font-size:50px;
+}
+.schedule{
+
+}
+.schedule:before{
+  content:'\0052';
+  font-family:proHelath;
+  font-size:30px;
+}
+.notification{
+
+}
+.notification:before{
+  content:'\0049';
+  font-family:proHelath;
+  font-size:30px;
+}
+.search{
+
+}
+.search:before{
+  content:'\0048';
+  font-size:30px;
+}
+.addRemainder{
+
+}
+.addRemainder:before{
+  content:'\0062';
+  font-family:proHelath;
+  font-size: 55px;
+}
+.appointments{
+
+}
+.appointments:before{
+  content:'\0067';
+  font-family:proHelath;
+  font-size: 50px;
+  color: #4F4F4F;
+}

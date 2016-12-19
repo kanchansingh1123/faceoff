@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar color="blue">
+      <ion-buttons end>
+        <button ion-button class="scheduleHeaderIcons">
+          <span class="search"></span>
+        </button>
+        <button ion-button class="scheduleHeaderIcons">
+          <span class="notification"></span>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="scheduleContainer">
+    <ion-card class="scheduleCard1">
+        <div class="medicine scheduleMedicine"></div>
+    </ion-card>
+    <ion-card class="scheduleCard2">
+      <div class="appointments scheduleAppointments"></div>
+    </ion-card>
+</ion-grid>
+
+<ion-card class="scheduleLowerCard">
+  <ion-card-header>
+      <span class='scheduleTime'></span>
+      <div class='scheduleDiv'>
+      <span class="scheduleNme">Prozac</span><br/>
+      <span>15 Jan to 23 Jan</span>
+    </div>
+    <div class='scheduleEdit'> <ion-icon name="create"></ion-icon></div>
+    <div class='scheduleDelete'><ion-icon name="trash" class="scheduleTrash "></ion-icon></div>
+  </ion-card-header>
+  <ion-card-content >
+    <button ion-button color="dark" round  class="scheduleBtns">Breakfast<br/>8:00 am</button>
+    <button ion-button color="dark" round class="scheduleBtns" >Lunch<br/>12:30 pm</button>
+    <button ion-button color="dark" round class="scheduleBtns">Dinner<br/>8:30 pm</button>
+  </ion-card-content>
+</ion-card>
+<!-- <ion-grid class="scheduleLowerGrid"> -->
+  <!-- <ion-card class="scheduleCard3"  color="blue" (click)="showRemainderPopup()"> -->
+  <!-- <div class="addRemainder scheduleRemainder"></div> -->
+<span (click)="showRemainderPopup()"><ion-icon ios="ios-add-circle" md="md-add-circle" class="scheduleRemainder"></ion-icon></span>
+  <!-- </ion-card> -->
+<!-- </ion-grid> -->
+</ion-content>

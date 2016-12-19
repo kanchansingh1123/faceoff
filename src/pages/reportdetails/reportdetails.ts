@@ -13,6 +13,7 @@ import { NavController } from 'ionic-angular';
 })
 export class ReportDetailPage {
   public services:any;
+  public addGroup:any;
   public serviceGroups:any = [];
   public reports: string = "reports";
   constructor(public navCtrl: NavController) {
@@ -28,6 +29,12 @@ export class ReportDetailPage {
 	  			icon:"head"
 	  		}
   		]
+      this.addGroup = [
+        {
+          Name:"Add New",
+          icon:"plus"
+        }
+      ]
   }
 
   ionViewDidLoad(){

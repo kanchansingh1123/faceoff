@@ -105,7 +105,9 @@ font-weight: normal;}
 
 }
 
-.file{
+.ion-ios-file,
+.ion-ios-file-outline,
+.ion-md-file{
 
 }
 
@@ -298,7 +300,9 @@ font-weight: normal;}
     font-weight: normal;
     text-decoration: inherit;
 }
-.file:before{
+.ion-ios-file,
+.ion-ios-file-outline,
+.ion-md-file:before{
 	content: "\0051";
     font-family: proHelath;
     font-style: normal;

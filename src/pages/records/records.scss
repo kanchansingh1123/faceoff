@@ -1,0 +1,34 @@
+page-records {
+    .services-list .tile-item{
+    margin: 5px 5px 10px 5px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      max-width: 47%;
+      background: #fff;
+  }
+  .services-list .title{
+      width: 100%;
+      font-size: 0.7em;
+      text-transform: uppercase;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      text-decoration:none;
+      margin-top: -5px;
+      color:#000
+  }
+  .services-list .listHomeIcon{
+    font-size: 50px;
+      margin-top: 5px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      color:#63DDED
+  }
+  .services-list{
+      background:#eaeaea;
+  }
+  .services-list a{
+      text-decoration:none;
+  }
+}

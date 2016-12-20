@@ -563,3 +563,27 @@ font-weight: normal;}
   font-size: 50px;
   color: #4F4F4F;
 }
+.upload-icon{
+    text-align: right !important;
+    width: 50%;
+    color: #63DDED !important;
+    font-size: 3em !important;
+}
+.photo-icon{
+    text-align: left !important;
+    width: 50%;
+    color: #63DDED !important;
+    font-size: 3em !important;
+}
+.action-sheet-md .action-sheet-title{
+    text-align: center;
+    color: #63DDED;
+}
+.action-sheet-wrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.action-sheet-md .action-sheet-container{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}

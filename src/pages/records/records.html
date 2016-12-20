@@ -1,14 +1,19 @@
-<ion-toolbar no-border-top>
-    <ion-segment [(ngModel)]="reports">
-      <ion-segment-button value="reports">
+
+<ion-header>
+    <header-bar></header-bar>
+</ion-header>
+
+<ion-content padding  class="services-list" >
+
+  <ion-segment [(ngModel)]="reports" class="segment-cls">
+      <ion-segment-button value="reports" class="segment-reports">
         REPORTS
       </ion-segment-button>
-      <ion-segment-button value="prescriptions">
+      <ion-segment-button value="prescriptions" class="segment-prescripions">
         PRESCRIPTIONS
       </ion-segment-button>
     </ion-segment>
-</ion-toolbar>
-<ion-content padding  class="services-list" >
+
 <div [ngSwitch]="reports">
     <ion-grid *ngSwitchCase="'reports'">
     <ion-row *ngFor="let serviceGroup of serviceGroups">

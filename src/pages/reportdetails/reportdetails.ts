@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,ActionSheetController} from 'ionic-angular';
+
 
 /*
   Generated class for the Password page.
@@ -16,7 +17,7 @@ export class ReportDetailPage {
   public addGroup:any;
   public serviceGroups:any = [];
   public reports: string = "reports";
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController) {
   		this.services = [
 	  		{
 	  			Name:"Dentist",
@@ -47,5 +48,29 @@ export class ReportDetailPage {
     }
 
  }
+
+  presentActionSheet() {
+   let actionSheet = this.actionSheetCtrl.create({
+      title: 'Add New',
+      buttons: [
+        {
+          cssClass:'upload upload-icon',
+          role: 'destructive',
+          handler: () => {
+            console.log('Destructive clicked');
+          }
+        },
+        {
+          cssClass:'photo photo-icon',
+          role: 'destructive',
+          handler: () => {
+            console.log('Archive clicked');
+          }
+        }
+      ],
+       cssClass:'reportactiontitle'
+    });
+    actionSheet.present();
+  }
 
 }

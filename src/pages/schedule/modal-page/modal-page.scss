@@ -1,0 +1,67 @@
+page-modal {
+  .remainderPopup{
+    margin-top: 155px !important;
+    height:335px !important;
+    border-radius:5px !important;
+    text-align: center !important;
+  }
+  .remainderTitle{
+    color: #63DDED !important;
+    font-weight: bold;
+    font-size: large;
+    margin: 5px !important;
+  }
+  .remainderBtns{
+    max-width: 30.8%;
+    word-break: break-word;
+    font-size:small;
+    margin-bottom: -10%;
+  }
+  .remainderToggleItem{
+    padding: 2%;
+    margin: 5%;
+  }
+
+  .remainderToggle{
+   margin-right: 10% !important;
+  }
+  .toggle-ios .toggle-checked {
+    background-color:#63DDED !important;;
+ }
+// .toggle-ios .toggle-icon {
+//     width: 66px;
+//     height: 22px;
+//   }
+  .toggle-inner{
+   width:66px;
+  }
+ .remainderCancel{
+   color: #63DDED !important;
+ }
+ .remainderSubmit{
+   width: 38% !important;
+   height: 12% !important;
+   margin-left: -20%;
+   font-size: small;
+ }
+ .remainderCancel{
+    margin-top: -35px;
+    margin-left: 40%;
+    font-size: large;
+    font-weight: bold;
+ }
+ .remainderTxt{
+   font-size: small;
+ }
+ .remainderFromInp{
+  border-bottom: 1px solid #BDBDBD !important;
+ }
+ .remainderFromInp1{
+   border-bottom: 1px solid #BDBDBD !important;
+ }
+ .selectedBtns{
+   background:#63DDED !important;
+ }
+
+
+}

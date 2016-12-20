@@ -24315,17 +24315,14 @@ sub {
 .timetablet:before {
   content: "\006C";
   font-family: proHelath;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
+  color: #63DDED;
+  font-size: 50px !important;
 }
 
 .delete:before {
   content: "\006D";
   font-family: proHelath;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
+  color: white;
 }
 
 .location:before {
@@ -24361,6 +24358,12 @@ sub {
 }
 
 /* Schedule css*/
+.edit:before {
+  content: "\006f";
+  font-family: proHelath;
+  color: white;
+}
+
 .medicine:before {
   content: "\0066";
   font-family: proHelath;
@@ -24382,7 +24385,9 @@ sub {
   font-size: 50px;
 }
 
-.schedule:before {
+.ion-ios-scheduler,
+.ion-ios-scheduler-outline,
+.ion-md-scheduler:before {
   content: '\0052';
   font-family: proHelath;
   font-size: 30px;
@@ -24877,8 +24882,8 @@ report-detail-page .services-list a {
 
 .scheduleCard3 {
   border-radius: 50% !important;
-  width: 25%;
-  height: 90px !important;
+  width: 15%;
+  height: 50px !important;
 }
 
 .scheduleLowerGrid {
@@ -24908,16 +24913,33 @@ report-detail-page .services-list a {
 }
 
 .scheduleDelete {
-  margin-top: -44px;
-  margin-left: 85%;
-  color: #EF544D;
-  font-size: 32px;
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px !important;
+  margin-top: -52px !important;
+  margin-left: 89%;
+  background-color: #E3583D;
 }
 
 .scheduleEdit {
-  margin-left: 75%;
-  font-size: 30px !important;
-  margin-top: -11%;
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px !important;
+  margin-top: -10%;
+  margin-left: 70%;
+  background-color: #63DDED;
+}
+
+.editDiv {
+  font-size: 26px;
+  margin-left: 9px;
+  margin-top: 6px;
+}
+
+.deleteDiv {
+  font-size: 28px;
+  margin-left: 8px;
+  margin-top: 5px;
 }
 
 page-modal .remainderPopup {

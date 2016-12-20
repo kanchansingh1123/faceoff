@@ -445,16 +445,13 @@ font-weight: normal;}
 .timetablet:before{
     content: "\006C";
     font-family: proHelath;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
+    color:#63DDED;
+    font-size: 50px !important;
 }
 .delete:before{
     content: "\006D";
     font-family: proHelath;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
+    color:white;
 }
 .location:before{
     content: "\006E";
@@ -486,8 +483,16 @@ font-weight: normal;}
   color:#ebebeb;
   font-size:30px;
 }
-/* Schedule css*/
 
+/* Schedule css*/
+.edit{
+
+}
+.edit:before {
+ content: "\006f";
+ font-family:proHelath;
+ color: white;
+}
 
 .medicine:before {
  content: "\0066";
@@ -513,10 +518,15 @@ font-weight: normal;}
   color:#F84E41;
   font-size:50px;
 }
-.schedule{
+.ion-ios-scheduler,
+.ion-ios-scheduler-outline,
+.ion-md-scheduler
+{
 
 }
-.schedule:before{
+.ion-ios-scheduler,
+.ion-ios-scheduler-outline,
+.ion-md-scheduler:before{
   content:'\0052';
   font-family:proHelath;
   font-size:30px;

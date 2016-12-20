@@ -43,8 +43,11 @@ page-schedule {
 }
 .scheduleCard3{
   border-radius: 50% !important;
-  width: 25%;
-  height: 90px !important;
+    width: 15%;
+    height: 50px !important;
+  // border-radius: 50% !important;
+  // width: 25%;
+  // height: 90px !important;
 }
 .scheduleLowerGrid{
   margin-top: 25%;
@@ -68,13 +71,30 @@ page-schedule {
   margin: 35% 42% !important;
 }
 .scheduleDelete{
-  margin-top: -44px;
-  margin-left: 85%;
-  color: #EF544D;
-  font-size: 32px;
+border-radius: 50% !important;
+width: 40px;
+height: 40px !important;
+margin-top: -52px !important;
+margin-left: 89%;
+background-color: #E3583D;
 }
 .scheduleEdit{
-  margin-left: 75%;
-  font-size: 30px !important;
-  margin-top: -11%;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px !important;
+    margin-top: -10%;
+    margin-left: 70%;
+    background-color: #63DDED;
+}
+.editDiv
+{
+font-size: 26px;
+margin-left: 9px;
+margin-top: 6px;
+}
+.deleteDiv
+{
+    font-size: 28px;
+    margin-left: 8px;
+    margin-top: 5px;
 }

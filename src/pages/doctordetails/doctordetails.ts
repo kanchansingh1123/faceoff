@@ -10,6 +10,7 @@ import { NotificationPage } from '../notification/notification';
   templateUrl: 'doctordetails.html'
 })
 export class DoctorDetailsPage {
+
 	public doctors:any;
 	public serviceName: any;
 	searchPage: any = SearchPage;
@@ -52,73 +53,105 @@ export class DoctorDetailsPage {
         {
           text: 'M',
           handler: () => {
-            console.log('Destructive clicked');
+            this.actionSheetCssClass(actionSheet, 0 );
+            return false;
           },
           cssClass:'schedule-day-button-enable'
         },
         {
           text: 'T',
           handler: () => {
-            console.log('Destructive clicked');
+            this.actionSheetCssClass(actionSheet, 1);
+            return false;
           },
           cssClass:'schedule-day-button-disable'
         },
         {
           text: 'W',
           handler: () => {
-            console.log('Destructive clicked');
+            this.actionSheetCssClass(actionSheet, 2);
+            return false;
           },
           cssClass:'schedule-day-button-disable'
         },
         {
           text: 'T',
           handler: () => {
-            console.log('Destructive clicked');
+            this.actionSheetCssClass(actionSheet, 3);
+            return false;
           },
           cssClass:'schedule-day-button-disable'
         },
         {
           text: 'F',
           handler: () => {
-            console.log('Destructive clicked');
+            this.actionSheetCssClass(actionSheet, 4);
+            return false;
           },
           cssClass:'schedule-day-button-disable'
         },
         {
           text: 'S',
           handler: () => {
-            console.log('Destructive clicked');
+            this.actionSheetCssClass(actionSheet, 5);
+            return false;
           },
           cssClass:'schedule-day-button-disable'
         },
         {
          text: '23 Dec',
+         handler: () => {
+           return false;
+         },
          cssClass:'date-button'
         },
         {
          text: '11:00 AM - 12:00 PM',
+         handler: () => {
+           return false;
+         },
          cssClass: "timings-button"
         },
         {
          text: '1:00 PM - 2:00 PM',
+         handler: () => {
+           return false;
+         },
          cssClass: "timings-button"
         },
         {
          text: '3:00 PM - 4:00 PM',
+         handler: () => {
+           return false;
+         },
          cssClass: "timings-button"
         },
         {
          text: '5:00 PM - 6:00 PM',
+         handler: () => {
+           return false;
+         },
          cssClass: "timings-button"
         },
         {
 	      text:"BOOK NOW",
+        handler: () => {
+          return true;
+        },
 	      cssClass: 'book-now'
 	    }
-      ],
-      enableBackdropDismiss: false
+      ]
     });
     actionSheet.present();
   }
-  
+
+  actionSheetCssClass(actionSheet, index){
+    actionSheet.data.buttons[index].cssClass = 'schedule-day-button-enable';
+    for(let i = 0; i < actionSheet.data.buttons.length; i++){
+       if(i != index && i <= 5){
+         actionSheet.data.buttons[i].cssClass = 'schedule-day-button-disable';
+       }
+    }
+  }
+
 }

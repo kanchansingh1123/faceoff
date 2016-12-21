@@ -5,7 +5,7 @@
   <ion-grid>
   <ion-row *ngFor="let serviceGroup of serviceGroups">
       <ion-col width-50 class="tile-item" *ngFor="let service of serviceGroup">
-       <a href="" class="tileDetails" [navPush]="detailsPage">
+       <a href="" class="tileDetails" [navPush]="detailsPage" [navParams]="{serviceName:service.Name}">
           <i class="row listHomeIcon" [ngClass]=service.icon></i>
           <h4 class="title"> {{service.DoctorsCounr}} </h4>
           <h4 class="title"> {{service.Name}} </h4>

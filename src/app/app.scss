@@ -537,14 +537,14 @@ font-weight: normal;}
 .notification:before{
   content:'\0049';
   font-family:proHelath;
-  font-size:30px;
+  font-size: 3em;
 }
 .search{
 
 }
 .search:before{
   content:'\0048';
-  font-size:30px;
+  font-size: 33px;
 }
 .addRemainder{
 
@@ -587,3 +587,85 @@ font-weight: normal;}
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
 }
+.tabs-md-dark .tabbar .tab-button:hover:not(.disable-hover), .tabs-md-dark .tabbar .tab-button[aria-selected=true]{
+    background-color: #63DDED;
+    padding:0;
+}
+.tabs-md .tab-button{
+    padding:0;
+}
+.tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text{
+    margin:0;
+}
+.notification-bardge{
+    position: absolute;
+    top: -1%;
+    right: -3%;
+    border-radius: 20px;
+}
+/* action sheet */
+.schedule-day-button-enable{
+        background: #63DDED !important;
+        width: 45px !important;
+        min-height: 3.6rem !important;
+        border-radius: 15px !important;
+        float: left !important;
+        margin-left: 5px !important;
+        padding: 0 !important;
+        margin-top:10px !important;
+        margin-bottom:10px !important;
+        color: #fff !important;
+        border-bottom: none !important;
+}
+.schedule-day-button-disable{
+        background: #FFF !important;
+        width: 45px !important;
+        min-height: 3.6rem !important;
+        border-radius: 15px !important;
+        float: left !important;
+        margin-left: 4px !important;
+        padding: 0 !important;
+        margin-top:10px !important;
+        margin-bottom:10px !important;
+        color: #686868 !important;
+        border-bottom: none !important;
+}
+
+.date-button{
+    border-top: 1px solid #BFBFBF !important;
+    border-bottom: 1px solid #BFBFBF !important;
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+    min-height: 35px !important;
+    font-size: 13px !important;
+    color: #63DDED !important;
+    font-weight: bold !important;
+}
+
+.timings-button{
+    width: 110px !important;
+    font-size: 10px !important;
+    float: left !important;
+    color: #fff !important;
+    background: #303030 !important;
+    padding: 0 !important;
+    min-height: 3.5rem !important;
+    margin-left: 10px !important;
+    border-radius: 3px !important;
+    margin-bottom: 10px !important;
+    border-bottom: none !important;
+}
+
+.book-now{
+    width: 125px !important;
+    min-height: 4rem !important;
+    background: #63DDED !important;
+    border-radius: 28px;
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    border-bottom: none !important;
+}
+

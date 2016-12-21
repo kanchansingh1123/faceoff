@@ -1,7 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
@@ -18,11 +17,11 @@ import { ReportDetailPage } from '../pages/reportdetails/reportdetails';
 import { SearchPage } from '../pages/search/search';
 import { SearchPipe } from '../pipes/searchPipe';
 import { HeaderBarPage } from '../pages/header/header';
+import { SelectLocationPage } from '../pages/selectlocation/selectlocation';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
     ContactPage,
     LoginPage,
     RegisterPage,
@@ -38,7 +37,8 @@ import { HeaderBarPage } from '../pages/header/header';
     ReportDetailPage,
     SearchPage,
     SearchPipe,
-    HeaderBarPage
+    HeaderBarPage,
+    SelectLocationPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -46,7 +46,6 @@ import { HeaderBarPage } from '../pages/header/header';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
     ContactPage,
     LoginPage,
     RegisterPage,
@@ -61,7 +60,8 @@ import { HeaderBarPage } from '../pages/header/header';
     RecordsPage,
     ReportDetailPage,
     SearchPage,
-    HeaderBarPage
+    HeaderBarPage,
+    SelectLocationPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

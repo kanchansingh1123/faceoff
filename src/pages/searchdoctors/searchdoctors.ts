@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DoctorDetailsPage } from '../doctordetails/doctordetails';
+import { SearchPage } from '../search/search';
+import { NotificationPage } from '../notification/notification';
+import { SelectLocationPage } from '../selectlocation/selectlocation';
+
 
 @Component({
   selector: 'page-serach-doctors',
@@ -11,6 +15,9 @@ export class SearchDoctors {
   public services:any;
   public serviceGroups:any = [];
   detailsPage: any = DoctorDetailsPage;
+  searchPage: any = SearchPage;
+  selectLocationPage: any = SelectLocationPage;
+  notificationPage: any = NotificationPage;
   constructor(public navCtrl: NavController) {
   		this.services = [
 	  		{

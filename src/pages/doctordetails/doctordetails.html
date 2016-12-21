@@ -1,5 +1,21 @@
 <ion-header>
-    <header-bar></header-bar>
+    <ion-navbar color="blue">
+        <div class="header-text" [navPush]="selectLocationPage">
+          <span class="text-kims">KIMS</span><br/>
+          <span class="text-kbhp">KPHB
+               <ion-icon name="arrow-dropdown"></ion-icon>
+             </span>
+         </div> 
+        <ion-buttons end>
+          <button ion-button class="scheduleHeaderIcons" [navPush]="searchPage">
+            <span class="search"></span>
+          </button>
+          <button ion-button class="scheduleHeaderIcons" [navPush]="notificationPage">
+            <span class="notification"></span>
+            <ion-badge color="light" class="notification-bardge">2</ion-badge>
+          </button>
+        </ion-buttons>
+    </ion-navbar>
 </ion-header>
 
 <ion-content class="doctors-list">

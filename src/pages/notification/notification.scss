@@ -1,21 +1,21 @@
 page-notification {
-	.notification {
+	.notificationcls {
         background:#eaeaea;
     }
-	.notification .font-color{
+	.notificationcls .font-color{
 	    color:#63DDED
 	}
-	.notification .break-fast {
+	.notificationcls .break-fast {
 		font-size: 13px;
 		padding: 25px 15px 25px 15px;
 	}
-	.notification hr{
+	.notificationcls hr{
         border-top: 1px solid #63DDED;
     }
-    .notification .notification-card {
+    .notificationcls .notification-card {
         box-shadow: none;
     }
-    .notification .hartbar-cls{
+    .notificationcls .hartbar-cls{
         z-index: 222;
         position: absolute;
         margin-top: -22px;
@@ -24,7 +24,7 @@ page-notification {
         max-width: 18%;
         max-height: 100%;
     }
-    .notification .hartbar-rating{
+    .notificationcls .hartbar-rating{
         z-index: 222;
         position: absolute;
         margin-top: -13px;
@@ -32,70 +32,70 @@ page-notification {
         font-size: 10px;
         color: #fff;
     }
-    .notification .phone-button{
+    .notificationcls .phone-button{
         background-color:#63DDED;
         margin-top: 1px;
     }
-    .notification a{
+    .notificationcls a{
         text-decoration:none;
     }
-    .notification hr{
+    .notificationcls hr{
         border-top: 1px solid #63DDED;
     }
     .notification .doctor-img{
         min-width: 8.5rem;
         min-height: 10rem;
     }
-    .notification .doctor-avatar{
+    .notificationcls .doctor-avatar{
         min-width: 8rem;
         min-height: 8rem;
         margin-top: 0 !important;
     }
-    .notification .sub-heading{
+    .notificationcls .sub-heading{
         margin-left: 1rem;
     }
-    .notification .doctor-card{
+    .notificationcls .doctor-card{
         box-shadow: none;
     }
-    .notification .doctor-item{
+    .notificationcls .doctor-item{
         padding-left: 0;
     }
-    .notification .setfont{
+    .notificationcls .setfont{
         font-size:3em;
     }
-    .notification .setpadding{
+    .notificationcls .setpadding{
     	padding-left:0;
     }
-    .notification .time-icon{
+    .notificationcls .time-icon{
     	margin-top: 5px;
     }
-    .notification .set-card-padding{
+    .notificationcls .set-card-padding{
     	padding:0;
     	padding-bottom: 5px;
     }
-    .notification .button-width{
+    .notificationcls .button-width{
        max-width:28%;
     }
-    .notification .button-font{
+    .notificationcls .button-font{
 	   font-size:11px;
 	   padding-top: 20px;
        padding-bottom: 20px;
     }
-    .notification .rate-button{
+    .notificationcls .rate-button{
     	margin-left: 37px;
     }
-    .notification .time-button{
+    .notificationcls .time-button{
     	background-color:#63DDED;
     }
-    .notification .centercls{
+    .notificationcls .centercls{
         text-align: center;
     	padding-bottom: 10px;
     }
-    .notification .reminder-data{
+    .notificationcls .reminder-data{
     	padding-left: 25px;
     	padding-right: 5px;
     }
-    .notification .button-phone-cancel{
+    .notificationcls .button-phone-cancel{
     	margin-top: 14%;
     }
 }

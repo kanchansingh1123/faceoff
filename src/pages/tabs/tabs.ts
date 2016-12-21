@@ -1,5 +1,6 @@
 
 import { Component } from '@angular/core';
+import { NavController,NavParams } from 'ionic-angular';
 import { SearchDoctors } from '../searchdoctors/searchdoctors';
 import { SchedulePage } from '../schedule/schedule';
 import { RecordsPage } from '../records/records';
@@ -15,7 +16,10 @@ export class TabsPage {
   tab2Root: any = RecordsPage;
   tab3Root: any = SchedulePage;
   tab4Root: any = SearchPage;
-  constructor() {
+  constructor(public navCtrl: NavController) {
 
+  }
+  doctor() {
+  
   }
 }

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="search-cls">
+   <ion-item> 
+  		<ion-icon class="search" item-left primary></ion-icon>
+        <ion-input type="text" placeholder="Search by Doctor Name" class="search-doctor-input" [(ngModel)]="filter"></ion-input>
+    </ion-item>
+	<button ion-button full color="dark" large >
+		<span class="button-inner seartch-btn-text">
+			Suggestions</span>
+	</button>
+	<ion-list>
+	  <button ion-item *ngFor="let doctor of doctorsList | SearchPipe : filter ;">
+	    {{ doctor.name }} | <span class="doctor-service">{{ doctor.serviceType }}</span>
+	  </button>  
+	</ion-list>
+  
+</ion-content>

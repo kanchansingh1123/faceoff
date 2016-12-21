@@ -1,0 +1,18 @@
+page-search {
+	.suggestion-btn{
+		text-algin:center;
+	}
+	.input-search{
+	    margin-left: 0;
+	}
+	.doctor-service{
+		color:#767373
+	}
+	.item-md ion-icon[item-left] + .item-inner, .item-md ion-icon[item-left] + .item-input{
+		margin-left: 0 !important;
+	}
+	.seartch-btn-text{
+		justify-content: flex-start;
+		text-transform: none;
+	}
+}

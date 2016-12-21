@@ -1,100 +1,250 @@
-page-schedule {
+page-schedulerList {
 
-}
-.scheduleHeader{
-  background-color:#63DDED !important;
-}
-.scheduleHeaderIcons{
-      color: white !important;
-}
-.scheduleContainer{
-  background-color:#303030 !important;
-  height: 100px !important;
-}
-.scheduleCard1{
-    border-radius: 40px !important;
+  .scheduleHeader{
     background-color:#63DDED !important;
-    width: 85px !important;
-    height:400% !important;
-    margin-left: 25% !important;
-}
- .scheduleCard2{
+  }
+  .scheduleHeaderIcons{
+        color: white !important;
+  }
+  .scheduleContainer{
+    background-color:#303030 !important;
+    height: 22% !important;
+  }
+  .scheduleCard1{
+      border-radius: 40px !important;
+      background-color:#63DDED !important;
+      width: 85px !important;
+      height:300px !important;
+      margin-left: 25% !important;
+  }
+   .scheduleCard2{
+      border-radius: 40px !important;
+      width: 85px !important;
+      height:300px !important;
+      margin-left: 60% !important;
+      margin-top: -22% !important;
+      background: #666666 !important;
+   }
+   .scheduleLowerCard{
+     height: 160px !important;
+   }
+   .scheduleBtns{
+     max-width: 30.8%;
+     word-break: break-word;
+     font-size:small;
+     margin-bottom: -10%;
+   }
+   .scheduleTrash{
+     margin-left: 35% !important;
+   }
+  .scheduleNme{
+    color:#63DDED;
+  }
+  .scheduleCard3{
+      border-radius: 50% !important;
+      width: 15%;
+      height: 50px !important;
+    // border-radius: 50% !important;
+    // width: 25%;
+    // height: 90px !important;
+  }
+  .scheduleLowerGrid{
+    margin-top: 25%;
+    margin-left: 35%;
+  }
+  .scheduleDiv{
+    margin-top: -13%;
+    margin-left: 18%;
+  }
+  .scheduleMedicine{
+    margin-left: 28%;
+    margin-top: 19%;
+  }
+  .scheduleAppointments{
+    margin-left: 22px !important;
+    margin-top: 17px !important;
+  }
+  .scheduleRemainder{
+    color: #63DDED;
+    font-size: 75px;
+    margin: 35% 42% !important;
+  }
+  .scheduleDelete{
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px !important;
+  margin-top: -52px !important;
+  margin-left: 89%;
+  background-color: #E3583D;
+  }
+  .scheduleEdit{
+      border-radius: 50% !important;
+      width: 40px;
+      height: 40px !important;
+      margin-top: -10%;
+      margin-left: 70%;
+      background-color: #63DDED;
+  }
+  .editDiv
+  {
+  font-size: 26px;
+  margin-left: 9px;
+  margin-top: 6px;
+  }
+  .deleteDiv
+  {
+      font-size: 28px;
+      margin-left: 8px;
+      margin-top: 5px;
+  }
+  .remainderTxt{
+    padding:10%;
+    color:white;
+    font-weight: bold;
+  }
+  .scheduleHideCard3{
     border-radius: 40px !important;
+    width: 75px !important;
+    height: 350px !important;
+    margin-left: 70% !important;
+    margin-top: -76px;
+    background: #666666 !important;
+  }
+  .scheduleHideCard2{
+  border-radius: 40px !important;
+  width: 85px !important;
+  height: 350px !important;
+  margin-left: 35% !important;
+  margin-top: -76px;
+  background: #63DDED !important;
+  }
+ .scheduleHideCard1{
+   height:350px !important;
+  //  margin-left: 25% !important;
+  border-radius: 40px !important;
+  background-color: #666666;
+  width:75px !important;
+ }
+ .hiddenScheduleMedicine{
+   margin-left: 25%;
+   margin-top: 22%;
+ }
+ .appointmentsTxt{
+   color:#666666;
+   font-weight: bold;
+ }
+ .dietManagement{
+   margin-top: 19px;
+    margin-left: 17px;
+ }
+ .dietAppointment{
+   margin-left: 18px;
+   margin-top: 19px;
+ }
+ .dietManagementActive{
+    color: white;
+    margin-top: 20px;
+    margin-left: 23px;
+ }
+ .dietWorkout{
+   margin-left:22px;
+   margin-top: 26px;
+ }
+ .dietListDiv{
+   margin-top: 50%;
+ }
+ .workoutcard2{
+    border-radius: 40px !important;
+    background-color: #63DDED !important;
     width: 85px !important;
-    height:400% !important;
-    margin-left: 60% !important;
+    height: 300px !important;
+    margin-left: 40% !important;
+    margin-top: 7%;
+ }
+ .workoutcard1{
+   border-radius: 40px !important;
+    width: 85px !important;
+    height: 300px !important;
+    /* margin-left: 60% !important; */
     margin-top: -22% !important;
     background: #666666 !important;
  }
- .scheduleLowerCard{
-   height: 160px !important;
+ .workoutActive{
+   margin-left: 30%;
+    margin-top: 26%;
+    color: white;
  }
- .scheduleBtns{
-   max-width: 30.8%;
-   word-break: break-word;
-   font-size:small;
-   margin-bottom: -10%;
+
+ /* doctor details list css */
+ .doctors-list {
+   margin-top: 45%;
  }
- .scheduleTrash{
-   margin-left: 35% !important;
+ .doctors-list .font-color{
+     color:#63DDED;
  }
-.scheduleNme{
-  color:#63DDED;
-}
-.scheduleCard3{
-  border-radius: 50% !important;
-    width: 15%;
-    height: 50px !important;
-  // border-radius: 50% !important;
-  // width: 25%;
-  // height: 90px !important;
-}
-.scheduleLowerGrid{
-  margin-top: 25%;
-  margin-left: 35%;
-}
-.scheduleDiv{
-  margin-top: -13%;
-  margin-left: 18%;
-}
-.scheduleMedicine{
-  margin-left: 28%;
-  margin-top: 17%;
-}
-.scheduleAppointments{
-  margin-left: 22px !important;
-  margin-top: 15px !important;
-}
-.scheduleRemainder{
-  color: #63DDED;
-  font-size: 75px;
-  margin: 35% 42% !important;
-}
-.scheduleDelete{
-border-radius: 50% !important;
-width: 40px;
-height: 40px !important;
-margin-top: -52px !important;
-margin-left: 89%;
-background-color: #E3583D;
-}
-.scheduleEdit{
-    border-radius: 50% !important;
-    width: 40px;
-    height: 40px !important;
-    margin-top: -10%;
-    margin-left: 70%;
-    background-color: #63DDED;
-}
-.editDiv
-{
-font-size: 26px;
-margin-left: 9px;
-margin-top: 6px;
-}
-.deleteDiv
-{
-    font-size: 28px;
-    margin-left: 8px;
-    margin-top: 5px;
+ .doctors-list .hartbar-cls{
+     z-index: 222;
+     position: absolute;
+     margin-top: -22px;
+     margin-left: 12px;
+     width: 100% !important;
+     max-width: 18%;
+     max-height: 100%;
+ }
+ .doctors-list .hartbar-rating{
+     z-index: 222;
+     position: absolute;
+     margin-top: -13px;
+     margin-left: 42px;
+     font-size: 10px;
+     color: #fff;
+ }
+ .doctors-list .phone-button{
+     background-color:#63DDED;
+     margin-top: 1px;
+ }
+ .doctors-list a{
+     text-decoration:none;
+ }
+ .doctors-list hr{
+     border-top: 1px solid #63DDED;
+ }
+ .doctors-list .doctor-img{
+     min-width: 8.5rem;
+     min-height: 10rem;
+ }
+ .doctors-list .doctor-avatar{
+     min-width: 8rem;
+     min-height: 8rem;
+     margin-top: 0 !important;
+ }
+ .doctors-list{
+     background:#eaeaea;
+ }
+ .doctors-list .sub-heading{
+     margin-left: 1rem;
+ }
+ .doctors-list .doctor-card{
+     box-shadow: none;
+ }
+ .doctors-list .doctor-item{
+     padding-left: 0;
+ }
+ .doctors-list .setpadding{
+     padding-left:0;
+ }
+ .doctors-list .time-icon{
+     margin-top: 10px;
+ }
+ .doctors-list .button-phone-booknow{
+     margin-top: 10%;
+ }
+ .cancelBtn{
+   font-size: 13px;
+   background: #F84E41;
+ }
+
+
+
+
 }

@@ -24299,17 +24299,13 @@ sub {
 .dumbell:before {
   content: "\0068";
   font-family: proHelath;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
+  font-size: 40px;
 }
 
 .apple:before {
   content: "\0069";
   font-family: proHelath;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
+  font-size: 45px;
 }
 
 .timetablet:before {
@@ -24396,12 +24392,12 @@ sub {
 .notification:before {
   content: '\0049';
   font-family: proHelath;
-  font-size: 30px;
+  font-size: 3em;
 }
 
 .search:before {
   content: '\0048';
-  font-size: 30px;
+  font-size: 33px;
 }
 
 .addRemainder:before {
@@ -24415,6 +24411,163 @@ sub {
   font-family: proHelath;
   font-size: 50px;
   color: #4F4F4F;
+}
+
+.appointments:before {
+  content: '\0067';
+  font-family: proHelath;
+  font-size: 50px;
+}
+
+.appointmentsHidden:before {
+  content: '\0067';
+  font-family: proHelath;
+  font-size: 50px;
+  color: white;
+}
+
+.appointmentsTxt {
+  color: white;
+}
+
+.medicineHidden:before {
+  content: '\0066';
+  font-family: proHelath;
+  font-size: 50px;
+  color: 4F4F4F;
+}
+
+/* end of schedule css */
+.upload-icon {
+  text-align: right !important;
+  width: 50%;
+  color: #63DDED !important;
+  font-size: 3em !important;
+}
+
+.photo-icon {
+  text-align: left !important;
+  width: 50%;
+  color: #63DDED !important;
+  font-size: 3em !important;
+}
+
+.action-sheet-md .action-sheet-title {
+  text-align: center;
+  color: #63DDED;
+}
+
+.action-sheet-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.action-sheet-md .action-sheet-container {
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.tabs-md-dark .tabbar .tab-button:hover:not(.disable-hover), .tabs-md-dark .tabbar .tab-button[aria-selected=true] {
+  background-color: #63DDED;
+  padding: 0;
+}
+
+.tabs-md .tab-button {
+  padding: 0;
+}
+
+.tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text {
+  margin: 0;
+}
+
+.notification-bardge {
+  position: absolute;
+  top: -1%;
+  right: -3%;
+  border-radius: 20px;
+}
+
+/* action sheet */
+.schedule-day-button-enable {
+  background: #63DDED !important;
+  width: 45px !important;
+  min-height: 3.6rem !important;
+  border-radius: 15px !important;
+  float: left !important;
+  margin-left: 5px !important;
+  padding: 0 !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  color: #fff !important;
+  border-bottom: none !important;
+}
+
+.schedule-day-button-disable {
+  background: #FFF !important;
+  width: 45px !important;
+  min-height: 3.6rem !important;
+  border-radius: 15px !important;
+  float: left !important;
+  margin-left: 4px !important;
+  padding: 0 !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  color: #686868 !important;
+  border-bottom: none !important;
+}
+
+.date-button {
+  border-top: 1px solid #BFBFBF !important;
+  border-bottom: 1px solid #BFBFBF !important;
+  padding: 0 !important;
+  margin-bottom: 10px !important;
+  min-height: 35px !important;
+  font-size: 13px !important;
+  color: #63DDED !important;
+  font-weight: bold !important;
+}
+
+.timings-button {
+  width: 110px !important;
+  font-size: 10px !important;
+  float: left !important;
+  color: #fff !important;
+  background: #303030 !important;
+  padding: 0 !important;
+  min-height: 3.5rem !important;
+  margin-left: 10px !important;
+  border-radius: 3px !important;
+  margin-bottom: 10px !important;
+  border-bottom: none !important;
+}
+
+.book-now {
+  width: 125px !important;
+  min-height: 4rem !important;
+  background: #63DDED !important;
+  border-radius: 28px;
+  padding: 0 !important;
+  margin-bottom: 10px !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  border-bottom: none !important;
+}
+
+.header-text .text-kims {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 5px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.header-text .text-kbhp {
+  position: absolute;
+  margin-top: -13px;
+  margin-left: 5px;
+  font-size: 15px;
+  color: #fff;
 }
 
 page-doctor-details .doctors-list .font-color {
@@ -24492,6 +24645,10 @@ page-doctor-details .doctors-list .button-phone-booknow {
   margin-top: 10%;
 }
 
+page-doctor-details .doctors-list ion-label {
+  white-space: normal;
+}
+
 page-login .input-align {
   margin-left: 4px !important;
   padding-right: 7px !important;
@@ -24547,28 +24704,28 @@ page-login .nav-ctrl {
   text-decoration: none;
 }
 
-page-notification .notification {
+page-notification .notificationcls {
   background: #eaeaea;
 }
 
-page-notification .notification .font-color {
+page-notification .notificationcls .font-color {
   color: #63DDED;
 }
 
-page-notification .notification .break-fast {
+page-notification .notificationcls .break-fast {
   font-size: 13px;
   padding: 25px 15px 25px 15px;
 }
 
-page-notification .notification hr {
+page-notification .notificationcls hr {
   border-top: 1px solid #63DDED;
 }
 
-page-notification .notification .notification-card {
+page-notification .notificationcls .notification-card {
   box-shadow: none;
 }
 
-page-notification .notification .hartbar-cls {
+page-notification .notificationcls .hartbar-cls {
   z-index: 222;
   position: absolute;
   margin-top: -22px;
@@ -24578,7 +24735,7 @@ page-notification .notification .hartbar-cls {
   max-height: 100%;
 }
 
-page-notification .notification .hartbar-rating {
+page-notification .notificationcls .hartbar-rating {
   z-index: 222;
   position: absolute;
   margin-top: -13px;
@@ -24587,16 +24744,16 @@ page-notification .notification .hartbar-rating {
   color: #fff;
 }
 
-page-notification .notification .phone-button {
+page-notification .notificationcls .phone-button {
   background-color: #63DDED;
   margin-top: 1px;
 }
 
-page-notification .notification a {
+page-notification .notificationcls a {
   text-decoration: none;
 }
 
-page-notification .notification hr {
+page-notification .notificationcls hr {
   border-top: 1px solid #63DDED;
 }
 
@@ -24605,70 +24762,70 @@ page-notification .notification .doctor-img {
   min-height: 10rem;
 }
 
-page-notification .notification .doctor-avatar {
+page-notification .notificationcls .doctor-avatar {
   min-width: 8rem;
   min-height: 8rem;
   margin-top: 0 !important;
 }
 
-page-notification .notification .sub-heading {
+page-notification .notificationcls .sub-heading {
   margin-left: 1rem;
 }
 
-page-notification .notification .doctor-card {
+page-notification .notificationcls .doctor-card {
   box-shadow: none;
 }
 
-page-notification .notification .doctor-item {
+page-notification .notificationcls .doctor-item {
   padding-left: 0;
 }
 
-page-notification .notification .setfont {
+page-notification .notificationcls .setfont {
   font-size: 3em;
 }
 
-page-notification .notification .setpadding {
+page-notification .notificationcls .setpadding {
   padding-left: 0;
 }
 
-page-notification .notification .time-icon {
+page-notification .notificationcls .time-icon {
   margin-top: 5px;
 }
 
-page-notification .notification .set-card-padding {
+page-notification .notificationcls .set-card-padding {
   padding: 0;
   padding-bottom: 5px;
 }
 
-page-notification .notification .button-width {
+page-notification .notificationcls .button-width {
   max-width: 28%;
 }
 
-page-notification .notification .button-font {
+page-notification .notificationcls .button-font {
   font-size: 11px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-page-notification .notification .rate-button {
+page-notification .notificationcls .rate-button {
   margin-left: 37px;
 }
 
-page-notification .notification .time-button {
+page-notification .notificationcls .time-button {
   background-color: #63DDED;
 }
 
-page-notification .notification .centercls {
+page-notification .notificationcls .centercls {
   text-align: center;
   padding-bottom: 10px;
 }
 
-page-notification .notification .reminder-data {
+page-notification .notificationcls .reminder-data {
   padding-left: 25px;
   padding-right: 5px;
 }
 
-page-notification .notification .button-phone-cancel {
+page-notification .notificationcls .button-phone-cancel {
   margin-top: 14%;
 }
 
@@ -24699,10 +24856,10 @@ page-password .input-align {
 }
 
 page-records .services-list .tile-item {
-  margin: 5px 5px 10px 5px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  max-width: 47%;
+  margin: 5px 5px 10px 15px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-width: 42%;
   background: #fff;
 }
 
@@ -24733,6 +24890,27 @@ page-records .services-list {
 
 page-records .services-list a {
   text-decoration: none;
+}
+
+page-records .services-list .segment-cls {
+  width: 75%;
+  margin-left: 13%;
+}
+
+page-records .services-list .segment-reports {
+  background-color: #63DDED;
+  border-top-left-radius: 64px;
+  border-bottom-left-radius: 64px;
+  border: none;
+  color: #fff;
+}
+
+page-records .services-list .segment-prescripions {
+  background-color: #63DDED;
+  border-top-right-radius: 64px;
+  border-bottom-right-radius: 64px;
+  border: none;
+  color: #fff;
 }
 
 page-register .register-list {
@@ -24831,88 +25009,106 @@ report-detail-page .services-list a {
   text-decoration: none;
 }
 
-.scheduleHeader {
+report-detail-page .photo-icon {
+  width: 50%;
+  text-align: left;
+  font-size: 2em;
+  color: #63DDED;
+}
+
+report-detail-page .uploadicon {
+  width: 50%;
+  text-align: right;
+  font-size: 2em;
+  color: #63DDED;
+}
+
+page-schedulerList {
+  /* doctor details list css */
+}
+
+page-schedulerList .scheduleHeader {
   background-color: #63DDED !important;
 }
 
-.scheduleHeaderIcons {
+page-schedulerList .scheduleHeaderIcons {
   color: white !important;
 }
 
-.scheduleContainer {
+page-schedulerList .scheduleContainer {
   background-color: #303030 !important;
-  height: 100px !important;
+  height: 22% !important;
 }
 
-.scheduleCard1 {
+page-schedulerList .scheduleCard1 {
   border-radius: 40px !important;
   background-color: #63DDED !important;
   width: 85px !important;
-  height: 400% !important;
+  height: 300px !important;
   margin-left: 25% !important;
 }
 
-.scheduleCard2 {
+page-schedulerList .scheduleCard2 {
   border-radius: 40px !important;
   width: 85px !important;
-  height: 400% !important;
+  height: 300px !important;
   margin-left: 60% !important;
   margin-top: -22% !important;
   background: #666666 !important;
 }
 
-.scheduleLowerCard {
+page-schedulerList .scheduleLowerCard {
   height: 160px !important;
 }
 
-.scheduleBtns {
+page-schedulerList .scheduleBtns {
   max-width: 30.8%;
   word-break: break-word;
   font-size: small;
   margin-bottom: -10%;
 }
 
-.scheduleTrash {
+page-schedulerList .scheduleTrash {
   margin-left: 35% !important;
 }
 
-.scheduleNme {
+page-schedulerList .scheduleNme {
   color: #63DDED;
 }
 
-.scheduleCard3 {
+page-schedulerList .scheduleCard3 {
   border-radius: 50% !important;
   width: 15%;
   height: 50px !important;
 }
 
-.scheduleLowerGrid {
+page-schedulerList .scheduleLowerGrid {
   margin-top: 25%;
   margin-left: 35%;
 }
 
-.scheduleDiv {
+page-schedulerList .scheduleDiv {
   margin-top: -13%;
   margin-left: 18%;
 }
 
-.scheduleMedicine {
+page-schedulerList .scheduleMedicine {
   margin-left: 28%;
-  margin-top: 17%;
+  margin-top: 19%;
 }
 
-.scheduleAppointments {
+page-schedulerList .scheduleAppointments {
   margin-left: 22px !important;
-  margin-top: 15px !important;
+  margin-top: 17px !important;
 }
 
-.scheduleRemainder {
+page-schedulerList .scheduleRemainder {
   color: #63DDED;
   font-size: 75px;
   margin: 35% 42% !important;
 }
 
-.scheduleDelete {
+page-schedulerList .scheduleDelete {
   border-radius: 50% !important;
   width: 40px;
   height: 40px !important;
@@ -24921,7 +25117,7 @@ report-detail-page .services-list a {
   background-color: #E3583D;
 }
 
-.scheduleEdit {
+page-schedulerList .scheduleEdit {
   border-radius: 50% !important;
   width: 40px;
   height: 40px !important;
@@ -24930,16 +25126,190 @@ report-detail-page .services-list a {
   background-color: #63DDED;
 }
 
-.editDiv {
+page-schedulerList .editDiv {
   font-size: 26px;
   margin-left: 9px;
   margin-top: 6px;
 }
 
-.deleteDiv {
+page-schedulerList .deleteDiv {
   font-size: 28px;
   margin-left: 8px;
   margin-top: 5px;
+}
+
+page-schedulerList .remainderTxt {
+  padding: 10%;
+  color: white;
+  font-weight: bold;
+}
+
+page-schedulerList .scheduleHideCard3 {
+  border-radius: 40px !important;
+  width: 75px !important;
+  height: 350px !important;
+  margin-left: 70% !important;
+  margin-top: -76px;
+  background: #666666 !important;
+}
+
+page-schedulerList .scheduleHideCard2 {
+  border-radius: 40px !important;
+  width: 85px !important;
+  height: 350px !important;
+  margin-left: 35% !important;
+  margin-top: -76px;
+  background: #63DDED !important;
+}
+
+page-schedulerList .scheduleHideCard1 {
+  height: 350px !important;
+  border-radius: 40px !important;
+  background-color: #666666;
+  width: 75px !important;
+}
+
+page-schedulerList .hiddenScheduleMedicine {
+  margin-left: 25%;
+  margin-top: 22%;
+}
+
+page-schedulerList .appointmentsTxt {
+  color: #666666;
+  font-weight: bold;
+}
+
+page-schedulerList .dietManagement {
+  margin-top: 19px;
+  margin-left: 17px;
+}
+
+page-schedulerList .dietAppointment {
+  margin-left: 18px;
+  margin-top: 19px;
+}
+
+page-schedulerList .dietManagementActive {
+  color: white;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+page-schedulerList .dietWorkout {
+  margin-left: 22px;
+  margin-top: 26px;
+}
+
+page-schedulerList .dietListDiv {
+  margin-top: 50%;
+}
+
+page-schedulerList .workoutcard2 {
+  border-radius: 40px !important;
+  background-color: #63DDED !important;
+  width: 85px !important;
+  height: 300px !important;
+  margin-left: 40% !important;
+  margin-top: 7%;
+}
+
+page-schedulerList .workoutcard1 {
+  border-radius: 40px !important;
+  width: 85px !important;
+  height: 300px !important;
+  /* margin-left: 60% !important; */
+  margin-top: -22% !important;
+  background: #666666 !important;
+}
+
+page-schedulerList .workoutActive {
+  margin-left: 30%;
+  margin-top: 26%;
+  color: white;
+}
+
+page-schedulerList .doctors-list {
+  margin-top: 45%;
+}
+
+page-schedulerList .doctors-list .font-color {
+  color: #63DDED;
+}
+
+page-schedulerList .doctors-list .hartbar-cls {
+  z-index: 222;
+  position: absolute;
+  margin-top: -22px;
+  margin-left: 12px;
+  width: 100% !important;
+  max-width: 18%;
+  max-height: 100%;
+}
+
+page-schedulerList .doctors-list .hartbar-rating {
+  z-index: 222;
+  position: absolute;
+  margin-top: -13px;
+  margin-left: 42px;
+  font-size: 10px;
+  color: #fff;
+}
+
+page-schedulerList .doctors-list .phone-button {
+  background-color: #63DDED;
+  margin-top: 1px;
+}
+
+page-schedulerList .doctors-list a {
+  text-decoration: none;
+}
+
+page-schedulerList .doctors-list hr {
+  border-top: 1px solid #63DDED;
+}
+
+page-schedulerList .doctors-list .doctor-img {
+  min-width: 8.5rem;
+  min-height: 10rem;
+}
+
+page-schedulerList .doctors-list .doctor-avatar {
+  min-width: 8rem;
+  min-height: 8rem;
+  margin-top: 0 !important;
+}
+
+page-schedulerList .doctors-list {
+  background: #eaeaea;
+}
+
+page-schedulerList .doctors-list .sub-heading {
+  margin-left: 1rem;
+}
+
+page-schedulerList .doctors-list .doctor-card {
+  box-shadow: none;
+}
+
+page-schedulerList .doctors-list .doctor-item {
+  padding-left: 0;
+}
+
+page-schedulerList .doctors-list .setpadding {
+  padding-left: 0;
+}
+
+page-schedulerList .doctors-list .time-icon {
+  margin-top: 10px;
+}
+
+page-schedulerList .doctors-list .button-phone-booknow {
+  margin-top: 10%;
+}
+
+page-schedulerList .cancelBtn {
+  font-size: 13px;
+  background: #F84E41;
 }
 
 page-modal .remainderPopup {
@@ -25014,6 +25384,29 @@ page-modal .selectedBtns {
   background: #63DDED !important;
 }
 
+page-search .suggestion-btn {
+  text-algin: center;
+}
+
+page-search .input-search {
+  margin-left: 0;
+}
+
+page-search .doctor-service {
+  color: #767373;
+}
+
+page-search .item-md ion-icon[item-left] + .item-inner, page-search .item-md ion-icon[item-left] + .item-input {
+  margin-left: 0 !important;
+}
+
+page-search .seartch-btn-text {
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-transform: none;
+}
+
 page-serach-doctors .services-list .tile-item {
   margin: 5px 5px 10px 15px;
   padding-top: 24px;
@@ -25049,4 +25442,9 @@ page-serach-doctors .services-list {
 
 page-serach-doctors .services-list a {
   text-decoration: none;
+}
+
+page-select-location .icon-meter {
+  color: red;
+  font-size: 40px !important;
 }

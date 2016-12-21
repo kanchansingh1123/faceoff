@@ -1,3 +1,4 @@
+
 // http://ionicframework.com/docs/v2/theming/
 
 
@@ -430,17 +431,13 @@ font-weight: normal;}
 }
 .dumbell:before{
 	content: "\0068";
-    font-family: proHelath;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
+  font-family: proHelath;
+  font-size:40px;
 }
 .apple:before{
-	content: "\0069";
+	  content: "\0069";
     font-family: proHelath;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
+    font-size:45px;
 }
 .timetablet:before{
     content: "\006C";
@@ -562,7 +559,39 @@ font-weight: normal;}
   font-family:proHelath;
   font-size: 50px;
   color: #4F4F4F;
+}.appointments{
+
 }
+.appointments:before{
+  content:'\0067';
+  font-family:proHelath;
+  font-size: 50px;
+  //color: #4F4F4F;
+}
+.appointmentsHidden{
+
+}
+.appointmentsHidden:before{
+  content:'\0067';
+  font-family:proHelath;
+  font-size: 50px;
+  color:white;
+}
+.appointmentsTxt{
+  color:white;
+}
+.medicineHidden{
+
+}
+.medicineHidden:before{
+  content:'\0066';
+  font-family:proHelath;
+  font-size: 50px;
+  color:4F4F4F;
+}
+
+/* end of schedule css */
+
 .upload-icon{
     text-align: right !important;
     width: 50%;

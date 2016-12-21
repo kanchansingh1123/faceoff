@@ -6,28 +6,42 @@
 <ion-content padding  class="services-list" >
 
   <ion-segment [(ngModel)]="reports" class="segment-cls">
-      <ion-segment-button value="reports" class="segment-reports">
+      <ion-segment-button value="reports" class="segment-reports"  [class.segment-selected]="isClassVisible" (click)="isClassVisible = (!isClassVisible)?!isClassVisible:isClassVisible">
         REPORTS
       </ion-segment-button>
-      <ion-segment-button value="prescriptions" class="segment-prescripions">
+      <ion-segment-button value="prescriptions" class="segment-prescripions"  [class.segment-selected]="!isClassVisible" (click)="isClassVisible = (isClassVisible)?!isClassVisible:isClassVisible">
         PRESCRIPTIONS
       </ion-segment-button>
     </ion-segment>
 
 <div [ngSwitch]="reports">
     <ion-grid *ngSwitchCase="'reports'">
-    <ion-row *ngFor="let serviceGroup of serviceGroups">
-        <ion-col width-50 class="tile-item" *ngFor="let service of serviceGroup">
+    <ion-row *ngFor="let reportGroups  of reportGroups">
+        <ion-col width-50 class="tile-item" *ngFor="let report  of reportGroups">
          <a href="" class="tileDetails" [navPush]="reportDetailsPage">
+            <i class="row listHomeIcon" [ngClass]=report.icon></i>
+            <h4 class="title"> {{report.Count}} </h4>
+            <h4 class="title"> {{report.Name}} </h4>
+          </a>            
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid *ngSwitchCase="'prescriptions'">
+      <ion-row >
+        <ion-col width-50 class="tile-item">
+         <a class="tileDetails">
+            <i class="row listHomeIcon" [ngClass]=addGroup.icon></i>
+            <h4 class="title"> {{addGroup.Name}} </h4>
+          </a>            
+        </ion-col>
+        <ion-col width-50 class="tile-item">
+         <a href="" class="tileDetails">
             <i class="row listHomeIcon" [ngClass]=service.icon></i>
             <h4 class="title"> {{service.DoctorsCounr}} </h4>
             <h4 class="title"> {{service.Name}} </h4>
           </a>            
         </ion-col>
     </ion-row>
-  </ion-grid>
-  <ion-grid *ngSwitchCase="'prescriptions'">
-   
   </ion-grid>
 </div>  
 </ion-content>

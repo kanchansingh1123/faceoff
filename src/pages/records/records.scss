@@ -35,18 +35,23 @@ page-records {
         width: 75%;
         margin-left: 13%;
     }
-    .services-list .segment-reports{
-            background-color: #63DDED;
+     .services-list .segment-reports{
+            background-color: #fff;
             border-top-left-radius: 64px;
             border-bottom-left-radius: 64px;
             border: none;
-            color: #fff;    
+            color: #000;    
     }
     .services-list .segment-prescripions{
-            background-color: #63DDED;
+            background-color: #fff;
             border-top-right-radius: 64px;
             border-bottom-right-radius: 64px;
             border: none;
-            color: #fff;    
+            color: #000;    
     }
+    .services-list .segment-selected{
+        background-color: #63DDED !important;
+        color:#fff;
+    }
+    
 }

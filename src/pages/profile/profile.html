@@ -1,0 +1,73 @@
+<!--
+  Generated template for the Profile page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+ <header-bar></header-bar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="assets/images/avatar.png">
+        </ion-avatar>
+        <h2 color="blue">{{profile.username}}</h2>
+        <p>{{profile.email}}</p>
+      </ion-item>
+    </ion-card>
+    
+    
+   <button class="btnProfile" (click)="btnProfile = !btnProfile">
+     <i class="profile"></i>     
+      <span>Profile</span><i class="plus" *ngIf="!btnProfile"></i> <i class="minus" *ngIf="btnProfile"></i> 
+   </button>
+
+    <ion-list class="profileList" *ngIf="btnProfile">
+      <ion-item>
+        <ion-label class="staticName">{{profile.username}}</ion-label>       
+      </ion-item>      
+      <ion-item>
+        <ion-label>{{profile.email}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Moblie No" [ngModel]="profile.phone"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Blood Group" [ngModel]="profile.bGroup"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button class="btnProfile" (click)="btnCpassword = !btnCpassword">
+     <i class="lock"></i>     
+      <span>Change Password</span><i class="plus" *ngIf="!btnCpassword"></i> <i class="minus" *ngIf="btnCpassword"></i>
+   </button>
+    <ion-list class="profileList" *ngIf="btnCpassword">
+     <ion-item>
+        <ion-input type="password" placeholder="Old Password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="New Password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button class="btnProfile" (click)="qLogin = !qLogin">
+     <i class="loginKey"></i>     
+      <span>Quick Login setup</span><i class="plus" *ngIf="!qLogin"></i> <i class="minus" *ngIf="qLogin"></i> 
+   </button>
+
+     <ion-list class="profileList" *ngIf="qLogin">
+      <ion-item>
+        <ion-input type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button color="white" round  class="logout">Logout</button>
+</ion-content>

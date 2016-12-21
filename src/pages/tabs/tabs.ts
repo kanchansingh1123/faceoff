@@ -5,6 +5,8 @@ import { SearchDoctors } from '../searchdoctors/searchdoctors';
 import { SchedulePage } from '../schedule/schedule';
 import { RecordsPage } from '../records/records';
 import { SearchPage } from '../search/search';
+import { ProfilePage } from '../profile/profile';
+
 
 @Component({
   templateUrl: 'tabs.html'
@@ -15,11 +17,8 @@ export class TabsPage {
   tab1Root: any = SearchDoctors;
   tab2Root: any = RecordsPage;
   tab3Root: any = SchedulePage;
-  tab4Root: any = SearchPage;
+  tab4Root: any = ProfilePage;
   constructor(public navCtrl: NavController) {
 
-  }
-  doctor() {
-  
   }
 }

@@ -18,6 +18,8 @@ import { SearchPage } from '../pages/search/search';
 import { SearchPipe } from '../pipes/searchPipe';
 import { HeaderBarPage } from '../pages/header/header';
 import { SelectLocationPage } from '../pages/selectlocation/selectlocation';
+import { ProfilePage } from '../pages/profile/profile';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { SelectLocationPage } from '../pages/selectlocation/selectlocation';
     SearchPage,
     SearchPipe,
     HeaderBarPage,
-    SelectLocationPage
+    SelectLocationPage,
+    ProfilePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -61,7 +64,8 @@ import { SelectLocationPage } from '../pages/selectlocation/selectlocation';
     ReportDetailPage,
     SearchPage,
     HeaderBarPage,
-    SelectLocationPage
+    SelectLocationPage,
+    ProfilePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

@@ -13,12 +13,17 @@ import { ReportDetailPage } from '../reportdetails/reportdetails';
   templateUrl: 'records.html'
 })
 export class RecordsPage {
-  public services:any;
-  public serviceGroups:any = [];
+  public report:any;
+  public reportGroups:any = [];
   reportDetailsPage: any = ReportDetailPage;
   public reports: string = "reports";
+  public isClassVisible : any = true;
+  public service:any;
+  public addGroup:any=[];
+  public serviceGroups:any = [];
+  public prescriptions: string = "prescriptions";
   constructor(public navCtrl: NavController) {
-  		this.services = [
+  		this.report = [
 	  		{
 	  			Name:"Dentist",
 	  			DoctorsCounr:"03",
@@ -47,17 +52,27 @@ export class RecordsPage {
 	  			DoctorsCounr:"06",
 	  			icon:"heart"
 	  		}
-  		]
+  		];
+  		this.service = 
+	  		{
+	  			Name:"Fever",
+	  			DoctorsCounr:"01",
+	  			icon:"note"
+	  		}
+  		this.addGroup = {
+				          Name:"Add New",
+				          icon:"plus"
+				        }
   }
 
   ionViewDidLoad(){
-		for (var i = 0 ; i < this.services.length; i += 2) {
-        let items:any = [this.services[i]];
-        if (this.services[i + 1]) {
-            items.push(this.services[i + 1]);
-        }
-        this.serviceGroups.push(items);
-    }
+		for (var i = 0 ; i < this.report.length; i += 2) {
+	        let items:any = [this.report[i]];
+	        if (this.report[i + 1]) {
+	            items.push(this.report[i + 1]);
+	        }
+	        this.reportGroups.push(items);
+    	}
 
  }
 

@@ -4,6 +4,8 @@ import { NavController,NavParams } from 'ionic-angular';
 import { ActionSheetController } from 'ionic-angular';
 import { SearchPage } from '../search/search';
 import { NotificationPage } from '../notification/notification';
+import { SelectLocationPage } from '../selectlocation/selectlocation';
+
 
 @Component({
   selector: 'page-doctor-details',
@@ -15,6 +17,7 @@ export class DoctorDetailsPage {
 	public serviceName: any;
 	searchPage: any = SearchPage;
 	notificationPage: any = NotificationPage;
+	selectLocationPage: any = SelectLocationPage;
   constructor(public navCtrl: NavController,public params: NavParams,public actionSheetCtrl: ActionSheetController) {
   	this.serviceName = this.params.get('serviceName');
   	this.doctors = [

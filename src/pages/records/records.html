@@ -28,7 +28,7 @@
   </ion-grid>
   <ion-grid *ngSwitchCase="'prescriptions'">
       <ion-row >
-        <ion-col width-50 class="tile-item">
+        <ion-col width-50 class="tile-item" (click)="addFile()">
          <a class="tileDetails">
             <i class="row listHomeIcon" [ngClass]=addGroup.icon></i>
             <h4 class="title"> {{addGroup.Name}} </h4>

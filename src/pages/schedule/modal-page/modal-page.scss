@@ -1,7 +1,7 @@
 page-modal {
   .remainderPopup{
-    margin-top: 155px !important;
-    height:335px !important;
+    margin-top: 182px !important;
+    height:285px !important;
     border-radius:5px !important;
     text-align: center !important;
   }
@@ -10,6 +10,7 @@ page-modal {
     font-weight: bold;
     font-size: large;
     margin: 5px !important;
+    margin-bottom: -15px!important;
   }
   .remainderBtns{
     max-width: 30.8%;
@@ -23,7 +24,7 @@ page-modal {
   }
 
   .remainderToggle{
-   margin-right: 10% !important;
+   margin-right: 21% !important;
   }
   .toggle-ios .toggle-checked {
     background-color:#63DDED !important;;
@@ -43,6 +44,7 @@ page-modal {
    height: 12% !important;
    margin-left: -20%;
    font-size: small;
+   margin-top: -8px;
  }
  .remainderCancel{
     margin-top: -35px;
@@ -52,6 +54,7 @@ page-modal {
  }
  .remainderTxt{
    font-size: small;
+   margin-left: 50px!important;
  }
  .remainderFromInp{
   border-bottom: 1px solid #BDBDBD !important;
@@ -62,6 +65,15 @@ page-modal {
  .selectedBtns{
    background:#63DDED !important;
  }
+  .toggle-md .toggle-checked {
+    background-color:#63DDED !important;
+  }
 
+  .toggle-md .toggle-checked .toggle-inner{
+    background-color:#63DDED !important;
+  }
+  .item-md.item-block .item-inner{
+  border-bottom: 1px solid #dedede !important;
+  }
 
 }

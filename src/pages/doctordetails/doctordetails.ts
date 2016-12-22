@@ -5,7 +5,7 @@ import { ActionSheetController } from 'ionic-angular';
 import { SearchPage } from '../search/search';
 import { NotificationPage } from '../notification/notification';
 import { SelectLocationPage } from '../selectlocation/selectlocation';
-
+import { LocalNotifications } from 'ionic-native';
 
 @Component({
   selector: 'page-doctor-details',
@@ -181,6 +181,13 @@ export class DoctorDetailsPage {
         {
         text:"Set Remainder",
         handler: () => {
+          LocalNotifications.schedule({
+   text: 'Your Appointment is scheduled with Dr.Shaw at 23-12-2017 11:30',
+   at: new Date(new Date().getTime() +2000),
+   led: 'FF0000',
+   icon:'https://narenbabu434.files.wordpress.com/2016/12/icon.png'
+   
+});
           return true;
         },
         cssClass: 'set-remainder'
@@ -200,5 +207,6 @@ export class DoctorDetailsPage {
        }
     }
   }
+
 
 }

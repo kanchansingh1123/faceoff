@@ -787,3 +787,20 @@ ion-app{
   .action-sheet-md .action-sheet-group .button-inner{
         justify-content: center;
   }
+  .set-thanks-btn{
+    margin: 0.4rem 0.2rem !important;
+    padding: 0 1em !important;
+    height: 2em !important;
+    border-radius: 22px !important;
+    font-size: 1.5rem !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    width: 37% !important;
+    margin-right: 39% !important;
+  }
+  .alert-md .alert-button .button-inner{
+      justify-content: center;
+  }
+  .alert-md .alert-wrapper{
+      border-radius: 10px !important;
+  }

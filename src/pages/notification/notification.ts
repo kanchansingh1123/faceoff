@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-notification',
@@ -8,7 +9,7 @@ import { NavController } from 'ionic-angular';
 })
 export class NotificationPage {
 public doctors:any;
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public alertCtrl: AlertController) {
 	this.doctors = [
 		  {
 		      Name:"Dr.Shaw",
@@ -22,6 +23,22 @@ public doctors:any;
 		      image:"assets/images/doctor1.png"
 		  }
 		]
+  }
+
+  thanksAlert() {
+    let alert = this.alertCtrl.create({
+      title: '<h4>Thanks for your Feedback.</h4>',
+      buttons: [
+      	{
+      	  text: 'ok',
+          handler: () => {
+            return true;
+          },
+          cssClass:'set-thanks-btn'
+      	}
+      ]
+    });
+    alert.present();
   }
 
 }

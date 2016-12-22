@@ -30,11 +30,10 @@ export class ProfilePage {
   }
 
   ionViewDidLoad() {
-    console.log('Hello ProfilePage Page');
     this.qPassword=localStorage.getItem("Name");
   }
   doLogout(){
-  if(this.qPassword != null && this.qPassword != undefined)
+  if(this.qPassword != null && this.qPassword != undefined && this.qPassword != "")
     this.navCtrl.setRoot(QuickLoginPage);
   else
       this.navCtrl.setRoot(LoginPage);
@@ -43,6 +42,4 @@ export class ProfilePage {
   setQuickLogin(){
     localStorage.setItem("Name", this.qPassword);
   }
-
-
 }

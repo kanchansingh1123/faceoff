@@ -20,21 +20,33 @@
 
     <ion-grid>
     <ion-row >
-        <ion-col width-50 class="tile-item" *ngFor="let add of addGroup">
+        <ion-col width-50 class="tile-item" (click)="presentActionSheet()">
          <a class="tileDetails">
-            <i class="row listHomeIcon" [ngClass]=add.icon (click)="presentActionSheet()"></i>
-            <h4 class="title"> {{add.Name}} </h4>
+            <i class="row listHomeIcon" [ngClass]=addGroup.icon ></i>
+            <h4 class="title"> {{addGroup.Name}} </h4>
+          </a>            
+        </ion-col>
+        <ion-col width-50 class="tile-item">
+         <a class="tileDetails">
+            <img src="{{defulat.image}}">
+            <h4 class="title"> {{defulat.Name}} </h4>
           </a>            
         </ion-col>
     </ion-row>
-    <ion-row *ngFor="let serviceGroup of serviceGroups">
-        <ion-col width-50 class="tile-item" *ngFor="let service of serviceGroup">
-         <a href="" class="tileDetails" [navPush]="detailsPage">
-            <i class="row listHomeIcon" [ngClass]=service.icon></i>
-            <h4 class="title"> {{service.DoctorsCounr}} </h4>
-            <h4 class="title"> {{service.Name}} </h4>
-          </a>            
-        </ion-col>
-    </ion-row>
-  </ion-grid>
+      </ion-grid>
+    <!-- <ion-row *ngFor="let serviceGroup of serviceGroups"> -->
+       <ion-grid  *ngFor="let image of images; let i = index; let even = even; let odd = odd;">
+  <ion-row *ngIf="even">
+    <ion-col width-50 *ngIf="images[i]">
+      <img [src]="images[i]" >
+      <h4 style="background:white;"><b> img_{{i}}</b></h4>
+    </ion-col>
+    <ion-col width-50 *ngIf="images[i+1]">
+      <img [src]="images[i+1]">
+      <h4 style="background:white;"><b> img_{{i+1}}</b></h4>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+    <!-- </ion-row> -->
+
 </ion-content>

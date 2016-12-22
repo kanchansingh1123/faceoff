@@ -1,8 +1,6 @@
 report-detail-page {
     .services-list .tile-item{
-    margin: 5px 5px 10px 5px;
-      padding-top: 16px;
-      padding-bottom: 16px;
+      margin: 5px 5px 10px 5px;
       max-width: 47%;
       background: #fff;
   }
@@ -23,7 +21,8 @@ report-detail-page {
       text-align: center;
       display: inline-block;
       width: 100%;
-      color:#63DDED
+      color:#63DDED;
+      padding-top: 18%;
   }
   .services-list{
       background:#eaeaea;

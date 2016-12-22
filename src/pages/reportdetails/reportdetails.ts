@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,ActionSheetController} from 'ionic-angular';
+import { Camera } from 'ionic-native';
 
 
 /*
@@ -17,38 +18,41 @@ export class ReportDetailPage {
   public addGroup:any;
   public serviceGroups:any = [];
   public reports: string = "reports";
+  public base64Image: string;
+  public defulat:any;
+  public IsFlag:boolean=false;
+  public images: Array<string>=[];  
+ 
+
+
+
   constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController) {
-  		this.services = [
-	  		{
-	  			Name:"Dentist",
-	  			DoctorsCounr:"03",
-	  			icon:"tooth"
-	  		},
-	  		{
-	  			Name:"Dermatologist",
-	  			DoctorsCounr:"02",
-	  			icon:"head"
-	  		}
-  		]
-      this.addGroup = [
-        {
-          Name:"Add New",
-          icon:"plus"
-        }
-      ]
-  }
+          this.addGroup =
+            {
+              Name:"Add New",
+              icon:"plus"
+            };
+          this.defulat= {
+                          Name:"blood reports",
+                          image:"assets/images/doctor1.png"
+                        };
 
-  ionViewDidLoad(){
-		for (var i = 0 ; i < this.services.length; i += 2) {
-        let items:any = [this.services[i]];
-        if (this.services[i + 1]) {
-            items.push(this.services[i + 1]);
-        }
-        this.serviceGroups.push(items);
-    }
+         this.services = [
+                          {name:"gujg",image:"assets/images/doctor1.png"},
+                          {name:"anil",image:"assets/images/doctor1.png"},
+                          {name:"ram",image:"assets/images/doctor1.png"}
+                        ];
 
- }
 
+
+        };
+
+
+       ionViewDidLoad(){
+       
+     }
+
+    
   presentActionSheet() {
    let actionSheet = this.actionSheetCtrl.create({
       title: 'Add New',
@@ -57,14 +61,15 @@ export class ReportDetailPage {
           cssClass:'upload upload-icon',
           role: 'destructive',
           handler: () => {
-            console.log('Destructive clicked');
+             this.uploadPicture();
           }
         },
         {
           cssClass:'photo photo-icon',
           role: 'destructive',
           handler: () => {
-            console.log('Archive clicked');
+            //console.log('Archive clicked');
+             this.takePicture();
           }
         }
       ],
@@ -72,5 +77,46 @@ export class ReportDetailPage {
     });
     actionSheet.present();
   }
+
+  //Take picture from camera
+   takePicture(){
+    Camera.getPicture({
+        destinationType: Camera.DestinationType.DATA_URL,
+        allowEdit:true,
+        correctOrientation:true,
+        saveToPhotoAlbum:true,
+        targetWidth: 1000,
+        targetHeight: 1000
+    }).then((imageData) => {
+      // imageData is a base64 encoded string
+        this.base64Image = "data:image/jpeg;base64," + imageData;
+         this.images.push(this.base64Image);
+       
+    }, (err) => {
+        console.log(err);
+    });
+  }
+
+//Upload picture
+
+  uploadPicture(){
+    Camera.getPicture({
+        destinationType: Camera.DestinationType.DATA_URL,
+        sourceType:Camera.PictureSourceType.PHOTOLIBRARY,
+        allowEdit:true,
+        correctOrientation:true,
+        saveToPhotoAlbum:true,
+        targetWidth: 1000,
+        targetHeight: 1000
+    }).then((imageData) => {
+      // imageData is a base64 encoded string
+         this.base64Image = "data:image/jpeg;base64," + imageData;
+        this.images.push(this.base64Image);
+       
+    }, (err) => {
+        console.log(err);
+    });
+  }
+  
 
 }

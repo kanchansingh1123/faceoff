@@ -1,10 +1,9 @@
 
 import { Component } from '@angular/core';
-import { NavController,NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { SearchDoctors } from '../searchdoctors/searchdoctors';
 import { SchedulePage } from '../schedule/schedule';
 import { RecordsPage } from '../records/records';
-import { SearchPage } from '../search/search';
 import { ProfilePage } from '../profile/profile';
 
 

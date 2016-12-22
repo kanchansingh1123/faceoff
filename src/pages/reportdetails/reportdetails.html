@@ -41,12 +41,12 @@
        <ion-grid  *ngFor="let image of images; let i = index; let even = even; let odd = odd;">
   <ion-row *ngIf="even">
     <ion-col width-50 *ngIf="images[i]" (mouseup)="upEvent()" (mousedown)="downEvent(i)" class="imagecls">
-      <img src="assets/images/correct.png" style="position: absolute;" *ngIf="image.isDelete">
+      <img src="assets/images/correct.png" style="position: absolute;max-width: 39%;" *ngIf="image.isDelete">
       <img [src]="images[i].img" >
       <h6 class="imagetitle">Report_{{i}}</h6>
     </ion-col>
     <ion-col width-50 *ngIf="images[i+1]" (mouseup)="upEvent()" (mousedown)="downEvent(i+1)" class="imagecls">
-      <img src="assets/images/correct.png" style="position: absolute;" *ngIf="images[i+1].isDelete">
+      <img src="assets/images/correct.png" style="position: absolute;max-width: 39%;" *ngIf="images[i+1].isDelete">
       <img [src]="images[i+1].img">
       <h6 class="imagetitle">Report_{{i+1}}</h6>
     </ion-col>

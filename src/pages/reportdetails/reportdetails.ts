@@ -86,7 +86,7 @@ export class ReportDetailPage {
     }).then((imageData) => {
       // imageData is a base64 encoded string
         this.base64Image = "data:image/jpeg;base64," + imageData;
-         this.images.push({this.base64Image,isDelete:false});
+         this.images.push({img:this.base64Image,isDelete:false});
        
     }, (err) => {
         console.log(err);
@@ -117,7 +117,7 @@ export class ReportDetailPage {
    downEvent(index){
      this.timer = setInterval(()=>{
                 clearInterval(this.timer);
-                this.isToDelete = true; alert(index);
+                this.isToDelete = true; 
                 this.images[index].isDelete = true;
             }, 100);
   };

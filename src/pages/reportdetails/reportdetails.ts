@@ -20,9 +20,11 @@ export class ReportDetailPage {
   public reports: string = "reports";
   public base64Image: string;
   public defulat:any;
-  public IsFlag:boolean=false;
-  public images: Array<string>=[];  
- 
+  public IsFlag:boolean =false;
+  public images: any =[];  
+  public timer:any;
+  public isToDelete : boolean = false;
+
 
 
 
@@ -36,12 +38,6 @@ export class ReportDetailPage {
                           Name:"blood reports",
                           image:"assets/images/doctor1.png"
                         };
-
-         this.services = [
-                          {name:"gujg",image:"assets/images/doctor1.png"},
-                          {name:"anil",image:"assets/images/doctor1.png"},
-                          {name:"ram",image:"assets/images/doctor1.png"}
-                        ];
 
 
 
@@ -90,7 +86,7 @@ export class ReportDetailPage {
     }).then((imageData) => {
       // imageData is a base64 encoded string
         this.base64Image = "data:image/jpeg;base64," + imageData;
-         this.images.push(this.base64Image);
+         this.images.push({this.base64Image,isDelete:false});
        
     }, (err) => {
         console.log(err);
@@ -111,12 +107,29 @@ export class ReportDetailPage {
     }).then((imageData) => {
       // imageData is a base64 encoded string
          this.base64Image = "data:image/jpeg;base64," + imageData;
-        this.images.push(this.base64Image);
+        this.images.push({img:this.base64Image,isDelete:false});
        
     }, (err) => {
         console.log(err);
     });
   }
   
+   downEvent(index){
+     this.timer = setInterval(()=>{
+                clearInterval(this.timer);
+                this.isToDelete = true; alert(index);
+                this.images[index].isDelete = true;
+            }, 100);
+  };
+  upEvent(){
+    clearInterval(this.timer);
+  };
+  deletePhotos(){
+        for (var i = this.images.length-1 ; i >= 0; i--) {
+            if(this.images[i].isDelete){
+                this.images.splice(i,1);
+            }
+          }
+  };
 
 }

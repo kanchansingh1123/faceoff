@@ -24,35 +24,37 @@ export class RecordsPage {
   public prescriptions: string = "prescriptions";
   constructor(public navCtrl: NavController) {
   		this.report = [
-	  		{
-	  			Name:"Dentist",
-	  			DoctorsCounr:"03",
-	  			icon:"tooth"
-	  		},
-	  		{
-	  			Name:"Dermatologist",
-	  			DoctorsCounr:"02",
-	  			icon:"head"
-	  		},{
-	  			Name:"Gastroenterologist",
-	  			DoctorsCounr:"05",
-	  			icon:"cardio"
-	  		},{
-	  			Name:"ENT Specialist",
-	  			DoctorsCounr:"02",
-	  			icon:"neck"
-	  		},
-	  		{
-	  			Name:"Psychiatrist",
-	  			DoctorsCounr:"01",
-	  			icon:"brain"
-	  		},
-	  		{
-	  			Name:"Cardiologist",
-	  			DoctorsCounr:"06",
-	  			icon:"heart"
-	  		}
-  		];
+			 	{
+				 	Name:"Blood Reports",
+				 	Count:"01",
+				 	icon:"feature"
+			 	},
+			 	{
+				 	Name:"X-Ray",
+				 	Count:"02",
+				 	icon:"plant"
+			 	},
+			 	{
+				 	Name:"Thyroid Profile",
+				 	Count:"01",
+				 	icon:"throat"
+			 	},
+			 	{
+				 	Name:"Biopsy",
+				 	Count:"00",
+				 	icon:"molecule"
+			 	},
+			 	{
+				 	Name:"Psychiatrist",
+				 	Count:"01",
+				 	icon:"meter"
+			 	},
+			 	{
+				 	Name:"Cardiologist",
+				 	Count:"06",
+				 	icon:"inject"
+			 	}
+ 			];
   		this.service = 
 	  		{
 	  			Name:"Fever",

@@ -41,6 +41,14 @@
   font-family: "proHelath";
   src:  url("../assets/fonts/Pro-Health.ttf") format("truetype");
 font-weight: normal;}
+@font-face {
+  font-family: Bariol Regular;
+  src:  url("../assets/fonts/font-family.ttf") format("truetype");
+font-weight: normal;}
+
+ion-app{
+    font-family: Bariol Regular !important;
+}
 
 .profile{
 

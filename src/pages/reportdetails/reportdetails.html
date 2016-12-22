@@ -5,12 +5,15 @@
           Blood reports
         </ion-title>
         <ion-buttons end>
-          <button ion-button class="scheduleHeaderIcons">
+          <button ion-button class="scheduleHeaderIcons" *ngIf="!isToDelete">
             <span class="search"></span>
           </button>
-          <button ion-button class="scheduleHeaderIcons">
+          <button ion-button class="scheduleHeaderIcons" *ngIf="!isToDelete">
             <span class="notification"></span>
             <ion-badge color="light" class="notification-bardge">2</ion-badge>
+          </button>
+          <button ion-button class="scheduleHeaderIcons" *ngIf="isToDelete" (click)="deletePhotos()">
+            <ion-icon name="md-trash" style="font-size:2rem;margin-right: 1rem;"></ion-icon>
           </button>
         </ion-buttons>
       </ion-navbar>
@@ -37,13 +40,15 @@
     <!-- <ion-row *ngFor="let serviceGroup of serviceGroups"> -->
        <ion-grid  *ngFor="let image of images; let i = index; let even = even; let odd = odd;">
   <ion-row *ngIf="even">
-    <ion-col width-50 *ngIf="images[i]">
-      <img [src]="images[i]" >
-      <h4 style="background:white;"><b> img_{{i}}</b></h4>
+    <ion-col width-50 *ngIf="images[i]" (mouseup)="upEvent()" (mousedown)="downEvent(i)" class="imagecls">
+      <img src="assets/images/correct.png" style="position: absolute;" *ngIf="image.isDelete">
+      <img [src]="images[i].img" >
+      <h6 class="imagetitle">Report_{{i}}</h6>
     </ion-col>
-    <ion-col width-50 *ngIf="images[i+1]">
-      <img [src]="images[i+1]">
-      <h4 style="background:white;"><b> img_{{i+1}}</b></h4>
+    <ion-col width-50 *ngIf="images[i+1]" (mouseup)="upEvent()" (mousedown)="downEvent(i+1)" class="imagecls">
+      <img src="assets/images/correct.png" style="position: absolute;" *ngIf="images[i+1].isDelete">
+      <img [src]="images[i+1].img">
+      <h6 class="imagetitle">Report_{{i+1}}</h6>
     </ion-col>
   </ion-row>
 </ion-grid>

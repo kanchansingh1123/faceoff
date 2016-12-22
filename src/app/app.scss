@@ -686,7 +686,7 @@ ion-app{
     background: #303030 !important;
     padding: 0 !important;
     min-height: 3.5rem !important;
-    margin-left: 10px !important;
+    margin-left: 11% !important;
     border-radius: 3px !important;
     margin-bottom: 10px !important;
     border-bottom: none !important;
@@ -743,3 +743,46 @@ ion-app{
   font-family:proHelath;
   font-size:30px;
 }
+.date-text-button{
+    margin-bottom: -40px !important;
+    margin-right: 140px!important;
+    font-size: 13px !important;
+    color: #63DDED !important;
+    font-weight: bold !important;
+}
+
+.timings-text-button{
+    font-size: 10px !important;
+    color: #fff !important;
+    background: #63DDED !important;
+    min-height: 3.5rem !important;
+    margin-right: 12px !important;
+    border-radius: 9px !important;
+    margin-bottom: 10px !important;
+    border-bottom: none !important;
+    width: 124px!important;
+}
+ .set-remainder{
+    margin: 0.4rem 0.2rem !important;
+    padding: 0 1em !important;
+    height: 2.8em !important;
+    border-radius: 22px !important;
+    font-size: 1.2rem !important;
+    color: #fff !important;
+    background-color: #222 !important;
+    width: 45% !important;
+    margin-right: 28% !important;
+    }
+    .alert-md .alert-head hr{
+      border-top: 1px solid #000;
+    }
+    .alert-md .alert-head{
+      padding-bottom:0;
+    }
+    .alert-md .alert-button{
+      text-transform: none;
+    }
+
+  .action-sheet-md .action-sheet-group .button-inner{
+        justify-content: center;
+  }

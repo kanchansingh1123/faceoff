@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController,NavParams } from 'ionic-angular';
+import { NavController,NavParams,AlertController } from 'ionic-angular';
 import { ActionSheetController } from 'ionic-angular';
 import { SearchPage } from '../search/search';
 import { NotificationPage } from '../notification/notification';
@@ -18,7 +18,8 @@ export class DoctorDetailsPage {
 	searchPage: any = SearchPage;
 	notificationPage: any = NotificationPage;
 	selectLocationPage: any = SelectLocationPage;
-  constructor(public navCtrl: NavController,public params: NavParams,public actionSheetCtrl: ActionSheetController) {
+  selectOption:any = {"day" : 'Wed, 23 Dec', "time": '11:00 AM - 12:00 PM', "doctorName" : "Dr.Shaw"};
+  constructor(public navCtrl: NavController,public params: NavParams,public actionSheetCtrl: ActionSheetController,private alertCtrl: AlertController) {
   	this.serviceName = this.params.get('serviceName');
   	this.doctors = [
 	  {
@@ -57,6 +58,7 @@ export class DoctorDetailsPage {
           text: 'M',
           handler: () => {
             this.actionSheetCssClass(actionSheet, 0 );
+            this.selectOption.day = "Mon, 23 Dec";
             return false;
           },
           cssClass:'schedule-day-button-enable'
@@ -65,6 +67,7 @@ export class DoctorDetailsPage {
           text: 'T',
           handler: () => {
             this.actionSheetCssClass(actionSheet, 1);
+            this.selectOption.day = "Tue, 23 Dec";
             return false;
           },
           cssClass:'schedule-day-button-disable'
@@ -73,6 +76,7 @@ export class DoctorDetailsPage {
           text: 'W',
           handler: () => {
             this.actionSheetCssClass(actionSheet, 2);
+            this.selectOption.day = "Wed, 23 Dec";
             return false;
           },
           cssClass:'schedule-day-button-disable'
@@ -81,6 +85,7 @@ export class DoctorDetailsPage {
           text: 'T',
           handler: () => {
             this.actionSheetCssClass(actionSheet, 3);
+            this.selectOption.day = "Thu, 23 Dec";
             return false;
           },
           cssClass:'schedule-day-button-disable'
@@ -89,6 +94,7 @@ export class DoctorDetailsPage {
           text: 'F',
           handler: () => {
             this.actionSheetCssClass(actionSheet, 4);
+            this.selectOption.day = "Fri, 23 Dec";
             return false;
           },
           cssClass:'schedule-day-button-disable'
@@ -97,6 +103,7 @@ export class DoctorDetailsPage {
           text: 'S',
           handler: () => {
             this.actionSheetCssClass(actionSheet, 5);
+            this.selectOption.day = "Sat, 23 Dec";
             return false;
           },
           cssClass:'schedule-day-button-disable'
@@ -111,6 +118,7 @@ export class DoctorDetailsPage {
         {
          text: '11:00 AM - 12:00 PM',
          handler: () => {
+         this.selectOption.time = "11:00 AM - 12:00 PM";
            return false;
          },
          cssClass: "timings-button"
@@ -118,6 +126,7 @@ export class DoctorDetailsPage {
         {
          text: '1:00 PM - 2:00 PM',
          handler: () => {
+         this.selectOption.time = "1:00 PM - 2:00 PM";
            return false;
          },
          cssClass: "timings-button"
@@ -125,6 +134,7 @@ export class DoctorDetailsPage {
         {
          text: '3:00 PM - 4:00 PM',
          handler: () => {
+          this.selectOption.time = "3:00 PM - 4:00 PM";
            return false;
          },
          cssClass: "timings-button"
@@ -132,6 +142,7 @@ export class DoctorDetailsPage {
         {
          text: '5:00 PM - 6:00 PM',
          handler: () => {
+         this.selectOption.time = "5:00 PM - 6:00 PM";
            return false;
          },
          cssClass: "timings-button"
@@ -139,6 +150,7 @@ export class DoctorDetailsPage {
         {
 	      text:"BOOK NOW",
         handler: () => {
+         this.appointment();
           return true;
         },
 	      cssClass: 'book-now'
@@ -147,6 +159,38 @@ export class DoctorDetailsPage {
     });
     actionSheet.present();
   }
+
+  appointment(){
+ let alert = this.alertCtrl.create({
+    title: '<h6>Your appointment with <a>Dr.Shaw</a> is Scheduled</h6><hr>',
+      buttons: [
+        {
+         text: this.selectOption.day,
+         handler: () => {
+           return false;
+         },
+         cssClass:'date-text-button'
+        },
+        {
+         text: this.selectOption.time,
+         handler: () => {
+           return false;
+         },
+         cssClass: "timings-text-button"
+        },
+        {
+        text:"Set Remainder",
+        handler: () => {
+          return true;
+        },
+        cssClass: 'set-remainder'
+      }
+      ]
+    });
+    alert.present();
+  }
+
+  
 
   actionSheetCssClass(actionSheet, index){
     actionSheet.data.buttons[index].cssClass = 'schedule-day-button-enable';

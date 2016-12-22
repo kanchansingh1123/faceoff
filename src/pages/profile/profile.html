@@ -66,8 +66,8 @@
 
      <ion-list class="profileList" *ngIf="qLogin">
       <ion-item>
-        <ion-input type="password" placeholder="Confirm Password"></ion-input>
+        <ion-input type="password" placeholder="Confirm Password" maxlength="5" [(ngModel)]="qPassword" (ngModelChange)="setQuickLogin()"></ion-input>
       </ion-item>
     </ion-list>
-    <button ion-button color="white" round  class="logout">Logout</button>
+    <button ion-button color="white" round  class="logout" (click)="doLogout()">Logout</button>
 </ion-content>

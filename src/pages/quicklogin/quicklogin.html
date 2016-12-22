@@ -1,0 +1,44 @@
+<!-- <ion-content class="content-background" padding>
+  <ion-list class="login-list">
+  <ion-item class="content-background item">
+      <ion-input type="password" maxlength="1" [ngModel]="range1" #focusable1 class="input-align" (keyup)="saverange($event,'focusable2')"></ion-input>
+      <ion-input type="password" maxlength="1" [ngModel]="range2" #focusable2 class="input-align" (keyup)="saverange($event,'focusable3')"></ion-input>
+      <ion-input type="password" maxlength="1" [ngModel]="range3" #focusable3 class="input-align" (keyup)="saverange($event,'focusable4')"></ion-input>
+      <ion-input type="password" maxlength="1" [ngModel]="range4" #focusable4 class="input-align" (keyup)="saverange($event,'focusable5')"></ion-input>
+      <ion-input type="password" maxlength="1" [ngModel]="range5" #focusable5 class="input-align"></ion-input>
+  </ion-item>
+  <div class="login-submit"><button ion-button class="lin-lout" color="white" (click)="doQuickLogin()">Quick Login</button></div>
+  <div class="skip"><span class="nav-ctrl" (click)="doLogin()">Skip</span></div>
+  </ion-list>
+</ion-content> -->
+<ion-content class="content-background" padding>
+<ion-list class="login-list">
+<table class="quick-table">
+    <tr>
+      <td>
+         <ion-input type="password" maxlength="1" size="1" pattern="[0-9]{6}" [(ngModel)]="range1" #focusable1 class="input-align" (keyup)="saverange($event,'focusable2')"></ion-input>
+      </td>
+      <td>
+         <ion-input type="password" maxlength="1" size="1" pattern="[0-9]{6}" [(ngModel)]="range2" #focusable2 class="input-align" (keyup)="saverange($event,'focusable3')"></ion-input>
+      </td>
+      <td>
+         <ion-input type="password" maxlength="1" size="1" pattern="[0-9]{6}" [(ngModel)]="range3" #focusable3 class="input-align" (keyup)="saverange($event,'focusable4')"></ion-input>
+      </td>
+      <td>
+         <ion-input type="password" maxlength="1" size="1" pattern="[0-9]{6}" [(ngModel)]="range4" #focusable4 class="input-align" (keyup)="saverange($event,'focusable5')"></ion-input>
+      </td>
+      <td>
+         <ion-input type="password" maxlength="1" size="1" pattern="[0-9]{6}" [(ngModel)]="range5" #focusable5 class="input-align"></ion-input>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <div class="login-submit"><button ion-button class="lin-lout" color="white" (click)="doQuickLogin()">Quick Login</button></div>
+      </td>
+      <td colspan="2">
+        <div class="skip"><span class="nav-ctrl" (click)="doLogin()">Skip</span></div>
+      </td>
+    </tr>
+</table>
+</ion-list>
+</ion-content> 

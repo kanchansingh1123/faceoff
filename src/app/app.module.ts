@@ -19,6 +19,7 @@ import { SearchPipe } from '../pipes/searchPipe';
 import { HeaderBarPage } from '../pages/header/header';
 import { SelectLocationPage } from '../pages/selectlocation/selectlocation';
 import { ProfilePage } from '../pages/profile/profile';
+import { QuickLoginPage } from '../pages/quicklogin/quicklogin';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ProfilePage } from '../pages/profile/profile';
     SearchPipe,
     HeaderBarPage,
     SelectLocationPage,
-    ProfilePage
+    ProfilePage,
+    QuickLoginPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -65,7 +67,8 @@ import { ProfilePage } from '../pages/profile/profile';
     SearchPage,
     HeaderBarPage,
     SelectLocationPage,
-    ProfilePage
+    ProfilePage,
+    QuickLoginPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

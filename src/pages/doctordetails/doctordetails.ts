@@ -19,6 +19,7 @@ export class DoctorDetailsPage {
 	notificationPage: any = NotificationPage;
 	selectLocationPage: any = SelectLocationPage;
   selectOption:any = {"day" : 'Wed, 23 Dec', "time": '11:00 AM - 12:00 PM', "doctorName" : "Dr.Shaw"};
+  isTimeSelect:any = false;
   constructor(public navCtrl: NavController,public params: NavParams,public actionSheetCtrl: ActionSheetController,private alertCtrl: AlertController) {
   	this.serviceName = this.params.get('serviceName');
   	this.doctors = [
@@ -52,6 +53,7 @@ export class DoctorDetailsPage {
   };
 
    bookNow(){
+   this.isTimeSelect = false;
    let actionSheet = this.actionSheetCtrl.create({
       buttons: [
         {
@@ -119,6 +121,7 @@ export class DoctorDetailsPage {
          text: '11:00 AM - 12:00 PM',
          handler: () => {
          this.selectOption.time = "11:00 AM - 12:00 PM";
+          this.actionSheetBtnCssClass(actionSheet,7);
            return false;
          },
          cssClass: "timings-button"
@@ -127,6 +130,7 @@ export class DoctorDetailsPage {
          text: '1:00 PM - 2:00 PM',
          handler: () => {
          this.selectOption.time = "1:00 PM - 2:00 PM";
+          this.actionSheetBtnCssClass(actionSheet, 8)
            return false;
          },
          cssClass: "timings-button"
@@ -135,6 +139,7 @@ export class DoctorDetailsPage {
          text: '3:00 PM - 4:00 PM',
          handler: () => {
           this.selectOption.time = "3:00 PM - 4:00 PM";
+          this.actionSheetBtnCssClass(actionSheet, 9)
            return false;
          },
          cssClass: "timings-button"
@@ -143,6 +148,7 @@ export class DoctorDetailsPage {
          text: '5:00 PM - 6:00 PM',
          handler: () => {
          this.selectOption.time = "5:00 PM - 6:00 PM";
+         this.actionSheetBtnCssClass(actionSheet, 10)
            return false;
          },
          cssClass: "timings-button"
@@ -150,8 +156,12 @@ export class DoctorDetailsPage {
         {
 	      text:"BOOK NOW",
         handler: () => {
-         this.appointment();
-          return true;
+          if(this.isTimeSelect){
+            this.appointment();
+            return true;
+          }
+          else
+           return false;
         },
 	      cssClass: 'book-now'
 	    }
@@ -181,6 +191,7 @@ export class DoctorDetailsPage {
         {
         text:"Set Remainder",
         handler: () => {
+        this.isTimeSelect = false;
           LocalNotifications.schedule({
    text: 'Your Appointment is scheduled with Dr.Shaw at 23-12-2017 11:30',
    at: new Date(new Date().getTime() +2000),
@@ -207,6 +218,15 @@ export class DoctorDetailsPage {
        }
     }
   }
-
+ actionSheetBtnCssClass(actionSheet, index){
+      this.isTimeSelect = true;
+      actionSheet.data.buttons[index].cssClass = 'timings-button enable-timings-btn';
+      actionSheet.data.buttons[11].cssClass = 'book-now enable-timings-btn';
+      for(let i = 7; i < actionSheet.data.buttons.length; i++){
+         if(i != index && i <= 10){
+           actionSheet.data.buttons[i].cssClass = 'timings-button';
+         }
+      }
+ }
 
 }

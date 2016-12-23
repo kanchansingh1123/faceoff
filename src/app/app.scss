@@ -705,7 +705,7 @@ ion-app{
 .book-now{
     width: 125px !important;
     min-height: 4rem !important;
-    background: #63DDED !important;
+    background: #78b0b7 !important;
     border-radius: 28px;
     padding: 0 !important;
     margin-bottom: 10px !important;
@@ -915,4 +915,10 @@ ion-app{
 }
 .tabs-ios .tabbar{
       border-top: none !important;
+}
+.enable-timings-btn{
+  background: #63DDED !important;
+}
+.disable-timings-btn{
+  background: #000 !important;
 }

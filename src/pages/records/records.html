@@ -18,7 +18,7 @@
     <ion-grid *ngSwitchCase="'reports'">
     <ion-row *ngFor="let reportGroups  of reportGroups">
         <ion-col width-50 class="tile-item" *ngFor="let report  of reportGroups">
-         <a href="" class="tileDetails" [navPush]="reportDetailsPage">
+         <a href="" class="tileDetails" [navPush]="reportDetailsPage" [navParams]="{reportName:report.Name}">
             <i class="row listHomeIcon" [ngClass]=report.icon></i>
             <h4 class="title"> {{report.Count}} </h4>
             <h4 class="title"> {{report.Name}} </h4>

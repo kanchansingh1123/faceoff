@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController,ActionSheetController} from 'ionic-angular';
+import { NavController,ActionSheetController,NavParams} from 'ionic-angular';
 import { Camera } from 'ionic-native';
 
 
@@ -24,11 +24,12 @@ export class ReportDetailPage {
   public images: any =[];  
   public timer:any;
   public isToDelete : boolean = false;
+  public reportName : any;
 
 
 
-
-  constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController) {
+  constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController,public params: NavParams) {
+          this.reportName = this.params.get('reportName');
           this.addGroup =
             {
               Name:"Add New",

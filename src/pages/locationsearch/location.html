@@ -1,0 +1,25 @@
+
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Select Location
+    </ion-title>
+
+  
+  <ion-toolbar >
+    <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+  </ion-toolbar>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>Auto detect current location</ion-content>
+
+<ion-searchbar></ion-searchbar>
